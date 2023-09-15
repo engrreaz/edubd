@@ -7,6 +7,14 @@
     #chairman {
         margin-top: -120px;
     }
+
+    .testimonial-imgs {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 1px solid var(--color-primary);
+        margin: 3px;
+    }
 </style>
 <div style="">
 
@@ -151,88 +159,120 @@
 
             <div class="slides-10 swiper" data-aos="fade-up" data-aos-delay="100">
                 <div class="swiper-wrapper">
-
                     <div class="swiper-slide">
                         <div class="testimonial-wrap">
                             <div class="testimonial-item" style="margin-top:5px;">
-                                <div class="card-header"
-                                    style="text-align:certer; color:var(--color-primary); font-weight:bold;">
-                                    Speech from Chairmain
-                                </div>
-                                <hr>
-                                <div class="d-flex align-items-center">
-                                    <img src="assets/img/testimonials/testimonials-1.jpg"
-                                        class="testimonial-img flex-shrink-0" alt="">
-                                    <div>
-                                        <h3>Saul Goodman</h3>
-                                        <h4>Ceo &amp; Founder</h4>
-                                        <h6>from Januar 2020 to till now</h6>
-                                        <div class="stars">
-                                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                                class="bi bi-star-fill"></i>
+                                <div style="text-align:center;">
+                                    <div class="card-header"
+                                        style="text-align:certer; color:var(--color-primary); font-weight:bold;">
+                                        <?php echo SPCHAIRMAN; ?>
+                                    </div>
+                                    <hr>
+                                    <div class="d-flexx align-items-center">
+                                        <div>
+                                            <img src="resources/chairman.jpg" class="testimonial-imgs flex-shrink-0"
+                                                alt="">
                                         </div>
                                     </div>
+                                    <?php
+                                    $sql0 = "SELECT * FROM committee where type='smc' and posten='Chairman'";
+                                    $result0bb = $conn->query($sql0);
+                                    if ($result0bb->num_rows > 0) {
+                                        while ($row0 = $result0bb->fetch_assoc()) {
+                                            $nam = $row0["member" . $lang];
+                                            $post = $row0["post" . $lang];
+                                            $addr = $row0["add" . $lang];
+                                        }
+                                    }
+                                    ?>
+                                    <div>
+                                        <h3>
+                                            <?php echo $nam; ?>
+                                        </h3>
+                                        <h4>
+                                            <?php echo $post; ?>
+                                        </h4>
+                                        <?php echo $addr; ?>
+                                    </div>
                                 </div>
-                                <p>
+                                <p style="text-align:justify">
                                     <i class="bi bi-quote quote-icon-left"></i>
-                                    Proin iaculis purus consequat sem cure digni ssim donec porttitora
-                                    entum
-                                    suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget
-                                    nibh et.
-                                    Maecen aliquam, risus at semper.
-                                    <i class="bi bi-quote quote-icon-right"></i>
+                                    <?php
+                                    $sql0 = "SELECT * FROM txtnote where title='chairmanspeech'";
+                                    $result0bb = $conn->query($sql0);
+                                    if ($result0bb->num_rows > 0) {
+                                        while ($row0 = $result0bb->fetch_assoc()) {
+                                            $text = $row0["text" . $lang];
+                                        }
+                                    }
+                                    $text = implode(' ', array_slice(explode(' ', $text), 0, 30));
+                                    echo $text . ' ...';
+                                    ?>
+                                    <i class="bi bi-quote quote-icon-right"></i><br>
                                     <a href="#" class="readmore stretched-link">Read more <i
                                             class="bi bi-arrow-right"></i></a>
                                 </p>
                             </div>
                         </div>
                     </div><!-- End testimonial item -->
-
-
                 </div>
 
-
                 <div class="swiper-wrapper">
-
                     <div class="swiper-slide">
                         <div class="testimonial-wrap">
                             <div class="testimonial-item" style="margin-top:5px;">
-                                <div class="card-header"
-                                    style="text-align:certer; color:var(--color-primary); font-weight:bold;">
-                                    Speech from Principal
-                                </div>
-                                <hr>
-                                <div class="d-flex align-items-center">
-                                    <img src="assets/img/testimonials/testimonials-1.jpg"
-                                        class="testimonial-img flex-shrink-0" alt="">
-                                    <div>
-                                        <h3>Saul Goodman</h3>
-                                        <h4>Ceo &amp; Founder</h4>
-                                        <h6>from Januar 2020 to till now</h6>
-                                        <div class="stars">
-                                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                                class="bi bi-star-fill"></i>
+                                <div style="text-align:center;">
+                                    <div class="card-header"
+                                        style="text-align:certer; color:var(--color-primary); font-weight:bold;">
+                                        <?php echo SPHT; ?>
+                                    </div>
+                                    <hr>
+                                    <div class="d-flexx align-items-center">
+                                        <div>
+                                            <img src="resources/ht.jpg" class="testimonial-imgs flex-shrink-0" alt="">
                                         </div>
                                     </div>
+                                    <?php
+                                    $sql0 = "SELECT * FROM committee where type='smc' and posten='Secretary'";
+                                    $result0bb = $conn->query($sql0);
+                                    if ($result0bb->num_rows > 0) {
+                                        while ($row0 = $result0bb->fetch_assoc()) {
+                                            $nam = $row0["member" . $lang];
+                                            $post = $row0["post" . $lang];
+                                            $addr = $row0["add" . $lang];
+                                        }
+                                    }
+                                    ?>
+                                    <div>
+                                        <h3>
+                                            <?php echo $nam; ?>
+                                        </h3>
+                                        <h4>
+                                            <?php echo $post; ?>
+                                        </h4>
+                                        <?php echo $addr; ?>
+                                    </div>
                                 </div>
-                                <p>
+                                <p style="text-align:justify">
                                     <i class="bi bi-quote quote-icon-left"></i>
-                                    Proin iaculis purus consequat sem cure digni ssim donec porttitora
-                                    entum
-                                    suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget
-                                    nibh et.
-                                    Maecen aliquam, risus at semper.
-                                    <i class="bi bi-quote quote-icon-right"></i>
+                                    <?php
+                                    $sql0 = "SELECT * FROM txtnote where title='htspeech'";
+                                    $result0bb = $conn->query($sql0);
+                                    if ($result0bb->num_rows > 0) {
+                                        while ($row0 = $result0bb->fetch_assoc()) {
+                                            $text = $row0["text" . $lang];
+                                        }
+                                    }
+                                    $text = implode(' ', array_slice(explode(' ', $text), 0, 30));
+                                    echo $text . ' ...';
+                                    ?>
+                                    <i class="bi bi-quote quote-icon-right"></i><br>
                                     <a href="#" class="readmore stretched-link">Read more <i
                                             class="bi bi-arrow-right"></i></a>
                                 </p>
                             </div>
                         </div>
                     </div><!-- End testimonial item -->
-
-
                 </div>
 
             </div>

@@ -3,6 +3,9 @@
         width: 35px;
         height: 35px;
         border-radius: 50%;
+        background-image: url('images/favicon.png');
+        background-color: white;
+        ;
     }
 </style>
 <header id="header" class="header d-flex align-items-center">
@@ -19,10 +22,13 @@
                         <?php echo HOME; ?>
                     </a></li>
 
-                <li class="dropdown"><a href="#"><span>About</span> <i
-                            class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <li class="dropdown"><a href="#"><span>
+                            <?php echo ABOUT; ?>
+                        </span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
                     <ul>
-                        <li><a href="about-us.php">About Us</a></li>
+                        <li><a href="about-us.php">
+                                <?php echo ABOUT_US; ?>
+                            </a></li>
                         <li><a href="#">History</a></li>
                         <li><a href="#">At-A-Glance</a></li>
                         <li><a href="#">Our Time Line</a></li>
@@ -71,8 +77,9 @@
                     </ul>
                 </li>
 
-                <li class="dropdown"><a href="#"><span>Academic</span> <i
-                            class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <li class="dropdown"><a href="#"><span>
+                            <?php echo ACADEMIC; ?>
+                        </span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
                     <ul>
                         <li><a href="clssec.php">
                                 <?php echo CLSSEC; ?>
@@ -93,20 +100,33 @@
                 </li>
 
 
-                <li><a href="#about">Gallery</a></li>
-                <li><a href="blog.htmls">Blog</a></li>
+                <li><a href="#about">
+                        <?php echo GALLERY; ?>
+                    </a></li>
+                <li><a href="blog.htmls">
+                        <?php echo BLOG; ?>
+                    </a></li>
                 <li><a href="contacts.php">
                         <?php echo CONTACTS; ?>
                     </a></li>
 
 
                 <li class="dropdown"><a href="#"><span>
-                            <img class="userlogo" src="images/favicon.png" />
+                            <img class="userlogo" src="images/favicon.png" alt="" />
                         </span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
                     <ul>
-                        <li><b> USER NAME</b></li>
-                        <li><a href="#">Profile</a></li>
-                        <li><a href="#">Security</a></li>
+                        <li style="text-align:center;"><b>
+                                <?php echo $usr; ?>
+                            </b></li>
+                        <li><a href="#">
+                                <?php echo DASHBOARD; ?>
+                            </a></li>
+                        <li><a href="#">
+                                <?php echo PROFILE; ?>
+                            </a></li>
+                        <li><a href="#">
+                                <?php echo SECURITY; ?>
+                            </a></li>
                     </ul>
                 </li>
 

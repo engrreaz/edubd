@@ -1,3 +1,15 @@
+<?php
+$sql0 = "SELECT count(*) as cnt FROM visitor where uri='$uri'";
+$result0bb = $conn->query($sql0);
+if ($result0bb->num_rows > 0) {
+    while ($row0 = $result0bb->fetch_assoc()) {
+        $cnt = $row0["cnt"];
+    }
+}
+$st = $cnt - 5;
+?>
+
+
 <!-- ======= Footer ======= -->
 <footer id="footer" class="footer">
 
@@ -8,8 +20,12 @@
                     <span>Impact</span>
                 </a>
                 <div id="visitor">
-                    <div id="counter">
-                        3702
+                    <div id="counter" style="font-size:26px; font-weight:bold;">
+                        <div class="stats-item d-flex align-items-center">
+                            <span data-purecounter-start="<?php echo $st; ?>" data-purecounter-end="<?php echo $cnt; ?>"
+                                data-purecounter-duration="1" class="purecounter"></span>
+                        </div><!-- End Stats Item -->
+
                     </div>
                     <div id="countertitle">Total Page Visitor</div>
                     <div id="unique">Unique Visitor : <span>1326</span></div>

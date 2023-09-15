@@ -15,6 +15,7 @@ if (isset($_GET['lang'])) {
 }
 $lang = $_COOKIE["LANG"];
 
+$usr = 'Guest';
 $sy = date('Y');
 $tday = date('Y-m-d');
 $cur = date('Y-m-d H:i:s');
@@ -80,7 +81,11 @@ if (!$eimbox) {
 
 
 
+$uri = $_SERVER['REQUEST_URI'];
+$ip = $_SERVER['REMOTE_ADDR'];
 
+$vst = "INSERT INTO visitor VALUES (NULL, '$uri','$ip','$tday','$cur')";
+$conn->query($vst);
 
 if (strpos($_SERVER['REQUEST_URI'], 'admin')) {
 

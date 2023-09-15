@@ -60,17 +60,21 @@
         <div class="social-links d-none d-md-flex align-items-center">
             <table>
                 <tr>
-                    <td>
-                        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-                        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-                        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+                    <td style="text-align:right;">
+                        <a href="<?php echo $lnkx; ?>" class="twitter"><i class="bi bi-twitter"></i></a>
+                        <a href="<?php echo $lnkfb; ?>" class="facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="<?php echo $lnkins; ?>" class="instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="<?php echo $lnkin; ?>" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <div style="float:right; text-align:right; color:white; padding-top:5px; position:relative;">
-                            EIIN : <b>102030</b><br>MPO Index : <b>90807060</b>
+                            EIIN : <b>
+                                <?php echo $sccode; ?>
+                            </b><br>MPO Index : <b>
+                                <?php echo scmpo; ?>
+                            </b>
 
 
                             <div id="langbox" style="margin:12px 0;">

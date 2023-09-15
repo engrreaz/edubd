@@ -3,10 +3,12 @@
 define("HOME", "Home");
 define("ABOUT", "About");
 define("ABOUT_US", "About Institution");
-// define("ABOUT_HISTORY", "");
-// define("ABOUT_ATAGLANCE", "");
+define("GALLERY", "Gallery");
+define("BLOG", "Blog");
 // define("ABOUT_TIMELINE", "");
-// define("", "");
+define("DASHBOARD", "Dashboard");
+define("PROFILE", "Profile");
+define("SECURITY", "Security");
 define("CONTACTS", "Contacts");
 // define("", "");
 define("ACADEMIC", "Academic");
@@ -39,10 +41,12 @@ define("COUNCIL", "Student Council");
 
 // Right Panel
 define("BSMCORNER", "Bongobondhu Corner");
+define("SPCHAIRMAN", "Speech from Chairman");
+define("SPHT", "Speech from Head Teacher");
 
 
 
-
+define("ABT", "About");
 // Syllabus Page
 define("SYLLABUS_TITLE", "Syllabus");
 define("SYLLABUS_SUBTITLE", "A syllabus is a document that communicates information about an academic course or class
@@ -73,7 +77,7 @@ define("ROUTINE_SUBTITLE", ".................................");
 define("CONTACTS_TITLE", "Contact with us");
 define("CONTACTS_SUBTITLE", ".................................");
 
-// Teaching Permission
+// Teaching Permission 
 define("PERM_TITLE", "Teaching Permission");
 define("PERM_SUBTITLE", ".................................");
 // Teaching Permission

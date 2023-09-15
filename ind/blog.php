@@ -3,7 +3,7 @@
     <div class="container" data-aos="fade-up">
 
         <div class="section-header">
-            <h2>Our Recent Blogs</h2>
+            <h2>Our Recent Activities</h2>
             <p>Voluptatem quibusdam ut ullam perferendis repellat non ut consequuntur est eveniet
                 deleniti
                 fignissimos eos quam</p>

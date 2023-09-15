@@ -47,7 +47,7 @@ require_once 'inc.php';
                 <div class="carousel-inner">
 
                     <div
-                        style="background:green; position:absolute; z-index:999; right:15px; bottom:15px; height:60px; width:60px;">
+                        style="background:green; position:absolute; z-index:990; right:15px; bottom:15px; height:60px; width:60px;">
                     </div>
 
 

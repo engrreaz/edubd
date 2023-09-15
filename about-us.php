@@ -35,18 +35,23 @@ require_once 'inc.php';
 
                         <div class="section-header">
                             <h2>
-                                <?php echo AFF_TITLE; ?>
+                                <?php echo scname; ?>
                             </h2>
-                            <p>
-                                <?php echo AFF_SUBTITLE; ?>
-                            </p>
+
                         </div>
 
-                        <div>
-                            <object data="resources/syllabus/SixJoba.pdf" type="application/pdf" width="100%"
-                                height="1000">
-                                alt : <a href="resources/syllabus/SixJoba.pdf">Class Routine</a>
-                            </object>
+                        <div style="text-align:justify">
+                            <?php
+                            $sql0 = "SELECT * FROM txtnote where title='aboutus'";
+                            $result0bb = $conn->query($sql0);
+                            if ($result0bb->num_rows > 0) {
+                                while ($row0 = $result0bb->fetch_assoc()) {
+                                    $text = $row0["text" . $lang];
+                                    echo $text;
+                                    echo 'ss';
+                                }
+                            }
+                            ?>
                         </div>
 
 

@@ -3,9 +3,12 @@
 define("HOME", "প্রথম পাতা");
 define("ABOUT", "সম্পর্কে");
 define("ABOUT_US", "প্রতিষ্ঠান সম্পর্কে");
-// define("ABOUT_HISTORY", "");
-// define("ABOUT_ATAGLANCE", "");
+define("GALLERY", "গ্যালারী");
+define("BLOG", "ব্লগ");
 // define("ABOUT_TIMELINE", "");
+define("DASHBOARD", "ড্যাশবোর্ড");
+define("PROFILE", "প্রোফাইল");
+define("SECURITY", "নিরাপত্তা");
 // define("", "");
 define("CONTACTS", "যোগাযোগ");
 // define("", "");
@@ -33,14 +36,15 @@ define("COUNCIL", "স্টুডেন্ট কাউন্সিল");
 
 // Right Panel
 define("BSMCORNER", "বঙ্গবন্ধু কর্ণার");
+define("SPCHAIRMAN", "সভাপতির বাণী");
+define("SPHT", "প্রধান শিক্ষকের বাণী");
 
 
 
 
 
 
-
-
+define("ABT", "কক");
 // Syllabus Page
 define("SYLLABUS_TITLE", "পাঠ্যক্রম");
 define("SYLLABUS_SUBTITLE", "A syllabus is a document that communicates information about an academic course or class
