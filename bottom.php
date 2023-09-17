@@ -27,8 +27,12 @@ $st = $cnt - 5;
                         </div><!-- End Stats Item -->
 
                     </div>
-                    <div id="countertitle">Total Page Visitor</div>
-                    <div id="unique">Unique Visitor : <span>1326</span></div>
+                    <div id="countertitle">
+                        <?php echo PAGEVIEW; ?>
+                    </div>
+                    <div id="unique">
+                        <?php echo UNIQUE; ?> : <span>1326</span>
+                    </div>
                 </div>
 
                 <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita
@@ -42,7 +46,9 @@ $st = $cnt - 5;
             </div>
 
             <div class="col-lg-2 col-6 footer-links">
-                <h4>Useful Links</h4>
+                <h4>
+                    <?php echo LINKS; ?>
+                </h4>
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About us</a></li>
@@ -53,7 +59,9 @@ $st = $cnt - 5;
             </div>
 
             <div class="col-lg-2 col-6 footer-links">
-                <h4>Our Services</h4>
+                <h4>
+                    <?php echo LINKS2; ?>
+                </h4>
                 <ul>
                     <li><a href="#">Web Design</a></li>
                     <li><a href="#">Web Development</a></li>
@@ -64,7 +72,9 @@ $st = $cnt - 5;
             </div>
 
             <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-                <h4>Contact Us</h4>
+                <h4>
+                    <?php echo CONTACTS; ?>
+                </h4>
                 <p>
                     <?php echo scname . '<br>' . scaddress; ?> <br><br>
                     <strong>Phone:</strong>
@@ -72,9 +82,7 @@ $st = $cnt - 5;
                     <strong>Email:</strong>
                     <?php echo scemail; ?><br>
                 </p>
-
             </div>
-
         </div>
     </div>
 

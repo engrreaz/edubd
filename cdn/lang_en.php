@@ -1,4 +1,8 @@
 <?php
+// define("", "");
+define("EIIN", "EIIN : ");
+define("MPOINDEX", "MPO Index : ");
+
 // Navigation Title
 define("HOME", "Home");
 define("ABOUT", "About");
@@ -29,6 +33,10 @@ define("STAFF", "Staffs");
 define("SMC", "SMC");
 define("COUNCIL", "Student Council");
 // define("", "");
+
+
+
+
 
 
 
@@ -92,5 +100,12 @@ define("AFF_SUBTITLE", ".................................");
 
 
 
+
+// Footer Section
+define("LINKS", "Useful Links");
+define("LINKS2", "");
+define("PAGEVIEW", "Total Page Views");
+define("UNIQUE", "Unique Visitor");
+define("TDVISIT", "Visit Today");
 
 ?>

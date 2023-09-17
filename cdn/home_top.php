@@ -70,11 +70,11 @@
                 <tr>
                     <td>
                         <div style="float:right; text-align:right; color:white; padding-top:5px; position:relative;">
-                            EIIN : <b>
-                                <?php echo $sccode; ?>
-                            </b><br>MPO Index : <b>
-                                <?php echo scmpo; ?>
-                            </b>
+
+                            <?php echo EIIN . $sccode; ?>
+                            <br>
+                            <?php echo MPOINDEX . scmpo; ?>
+
 
 
                             <div id="langbox" style="margin:12px 0;">

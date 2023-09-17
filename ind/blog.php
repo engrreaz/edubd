@@ -12,116 +12,72 @@
         <div class="slides-2 swiper" data-aos="fade-in" data-aos-delay="10">
             <div class="swiper-wrapper">
 
-                <div class="swiper-slide">
-                    <div class="testimonial-wrap">
-                        <div class="testimonial-item">
-                            <div class="d-flex align-items-center">
-                                <img src="assets/img/testimonials/testimonials-1.jpg"
-                                    class="testimonial-img flex-shrink-0" alt="">
-                                <div>
-                                    <h3>Saul Goodman</h3>
-                                    <h4>Ceo &amp; Founder</h4>
-                                    <div class="stars">
-                                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                            class="bi bi-star-fill"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <p>
-                                <i class="bi bi-quote quote-icon-left"></i>
-                                Proin iaculis purus consequat sem cure digni ssim donec porttitora
-                                entum
-                                suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget
-                                nibh et.
-                                Maecen aliquam, risus at semper.
-                                <i class="bi bi-quote quote-icon-right"></i>
-                            </p>
-                        </div>
-                    </div>
-                </div><!-- End testimonial item -->
-
-                <div class="swiper-slide">
-                    <div class="testimonial-wrap">
-                        <div class="testimonial-item">
-                            <div class="d-flex align-items-center">
-                                <img src="assets/img/testimonials/testimonials-2.jpg"
-                                    class="testimonial-img flex-shrink-0" alt="">
-                                <div>
-                                    <h3>Sara Wilsson</h3>
-                                    <h4>Designer</h4>
-                                    <div class="stars">
-                                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                            class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                            class="bi bi-star-fill"></i>
-                                    </div>
-                                </div>
-                            </div>
-                            <p>
-                                <i class="bi bi-quote quote-icon-left"></i>
-                                Export tempor illum tamen malis malis eram quae irure esse labore
-                                quem cillum
-                                quid cillum eram malis quorum velit fore eram velit sunt aliqua
-                                noster fugiat
-                                irure amet legam anim culpa.
-                                <i class="bi bi-quote quote-icon-right"></i>
-                            </p>
-                        </div>
-                    </div>
-                </div><!-- End testimonial item -->
-
-
                 <style>
 
                 </style>
+                <?php
+                $sql0 = "SELECT * FROM blog order by posttime desc limit 5";
+                $result0bbx = $conn->query($sql0);
+                if ($result0bbx->num_rows > 0) {
+                    while ($row0 = $result0bbx->fetch_assoc()) {
+                        $posttitle = $row0["title"];
+                        $postbody = $row0["body"];
+                        $category = $row0["category"];
+                        $author = $row0["author"];
+                        $posttime = $row0["posttime"];
+                        $pic = $row0["pic"];
+                        ?>
 
-                <div class="swiper-slide">
-                    <div class="testimonial-wrap">
-                        <div class="testimonial-item " style="">
+                        <div class="swiper-slide">
+                            <div class="testimonial-wrap">
+                                <div class="testimonial-item " style="">
 
 
-                            <div class="post-img blogbox" style="  ">
-                                <img src="assets/img/blog/blog-1.jpg" alt="" class="img-fluid ">
-                            </div>
-
-                            <article style="">
-
-
-
-                                <p class="post-category">Politics</p>
-
-                                <h2 class="title">
-                                    <a href="blog-details.html">Dolorum optio tempore voluptas dignissimos</a>
-                                </h2>
-
-                                <div class="d-flex align-items-center">
-                                    <img src="assets/img/blog/blog-author.jpg" alt=""
-                                        class="img-fluid post-author-img flex-shrink-0 rnd" style="">
-                                    <div class="post-meta">
-                                        <small><time datetime="2022-01-01">Jan 1, 2022</time></small>
+                                    <div class="post-img blogbox" style="  ">
+                                        <img src="assets/img/blog/<?php echo $pic; ?>" alt="" class="img-fluid " style="width:100%; height:200px; display: flex; 
+  flex-wrap: wrap;">
                                     </div>
+
+                                    <article style="">
+
+
+
+                                        <p class="post-category">
+                                            <?php echo $category; ?>
+                                        </p>
+
+                                        <h2 class="title">
+                                            <a href="#">
+                                                <?php echo $posttitle; ?>
+                                            </a>
+                                        </h2>
+
+                                        <div class="d-flex align-items-center">
+                                            <img src="assets/img/blog/blog-author.jpg" alt=""
+                                                class="img-fluid post-author-img flex-shrink-0 rnd" style="">
+                                            <div class="post-meta" style="padding-left:8px;">
+                                                <small><time datetime="<?php echo $posttime; ?>">Jan 1, 2022</time></small>
+                                                <p class="post-author" style="margin:0; ">
+                                                    <b>
+                                                        <?php echo $author; ?>
+                                                    </b>
+                                                    <br>
+                                                    <small style="font-size:11px;">Asstt. Teacher</small>
+                                                </p>
+                                            </div>
+
+                                        </div>
+
+                                    </article>
                                 </div>
-                                <p class="post-author">Maria Doe jskaksf skjksf
-                                    <br>
-                                    <small>Asstt. Teacher</small>
-                                </p>
-
-                            </article>
-
-
-
-
-
-
-
-
-
-
-
-
-                        </div>
-                    </div>
-                </div><!-- End testimonial item -->
+                            </div>
+                        </div><!-- End testimonial item -->
+                        <?php
+                    }
+                } else {
+                    echo 'No Activities Found';
+                }
+                ?>
 
 
 

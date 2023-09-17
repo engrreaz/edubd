@@ -1,4 +1,6 @@
 <?php
+define("EIIN", "ইআইআইএন : ");
+define("MPOINDEX", "এমপিও ইনডেক্স : ");
 // Navigation Title
 define("HOME", "প্রথম পাতা");
 define("ABOUT", "সম্পর্কে");
@@ -91,5 +93,10 @@ define("AFF_SUBTITLE", ".................................");
 
 
 
-
+// Footer Section
+define("LINKS", "গুরুত্বপূর্ণ লিংকসমূহ");
+define("LINKS2", "&nbsp;");
+define("PAGEVIEW", "সর্বমোট দর্শনার্থী");
+define("UNIQUE", "একক দর্শনার্থী");
+define("TDVISIT", "আজকের দর্শনার্থী");
 ?>

@@ -31,19 +31,19 @@ include 'ind/blog.php';
                 <div class="stats-item d-flex align-items-center">
                     <span data-purecounter-start="0" data-purecounter-end="731" data-purecounter-duration="1"
                         class="purecounter"></span>
-                    <p><strong>Happy Clients</strong> consequuntur quae diredo para mesta</p>
+                    <p><strong>Students</strong> Present Today</p>
                 </div><!-- End Stats Item -->
 
                 <div class="stats-item d-flex align-items-center">
-                    <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1"
+                    <span data-purecounter-start="0" data-purecounter-end="14" data-purecounter-duration="1"
                         class="purecounter"></span>
-                    <p><strong>Projects</strong> adipisci atque cum quia aut</p>
+                    <p><strong>Teachers</strong> Teaches Them</p>
                 </div><!-- End Stats Item -->
 
                 <div class="stats-item d-flex align-items-center">
-                    <span data-purecounter-start="0" data-purecounter-end="453" data-purecounter-duration="1"
+                    <span data-purecounter-start="0" data-purecounter-end="54" data-purecounter-duration="1"
                         class="purecounter"></span>
-                    <p><strong>Hours Of Support</strong> aut commodi quaerat</p>
+                    <p><strong>Staffs</strong> Also Available</p>
                 </div><!-- End Stats Item -->
 
             </div>

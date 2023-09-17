@@ -47,6 +47,7 @@
 
         <div class="row gy-4">
 
+
             <div class="col-xl-6 col-md-6 d-flexx" data-aos="fade-up" data-aos-delay="300" style="display:block;">
                 <div class="member" style="position:relative;">
                     <div class="logo"><i class="bi bi-mortarboard-fill cs"></i></div>
@@ -63,28 +64,86 @@
             </div><!-- End Block -->
             <div class="col-xl-6 col-md-6 d-flexx" data-aos="fade-up" data-aos-delay="300" style="display:block;">
                 <div class="member" style="position:relative;">
-                    <div class="logo"><i class="bi bi-mortarboard-fill cs"></i></div>
-                    <h4>Academic</h4>
+                    <div class="logo"><i class="bi bi-card-checklist cs"></i></div>
+                    <h4>Result</h4>
                     <div style="text-align:left;">
                         <ul>
-                            <li><a href="#">Class Schedule</a></li>
-                            <li><a href="#">Exam Schedule</a></li>
-                            <li><a href="#">Syllabus</a></li>
-                            <li><a href="#">Class Schedule</a></li>
+                            <li><a href="#">Semester/Term Exam Result</a></li>
+                            <li><a href="#">JSC Result</a></li>
+                            <li><a href="#">SSC Result</a></li>
+                            <li><a href="#">Result Stat.</a></li>
                         </ul>
                     </div>
                 </div>
             </div><!-- End Block -->
             <div class="col-xl-6 col-md-6 d-flexx" data-aos="fade-up" data-aos-delay="300" style="display:block;">
                 <div class="member" style="position:relative;">
-                    <div class="logo"><i class="bi bi-mortarboard-fill cs"></i></div>
-                    <h4>Academic</h4>
+                    <div class="logo"><i class="bi bi-universal-access cs"></i></div>
+                    <h4>Co-Curricular Activity</h4>
                     <div style="text-align:left;">
                         <ul>
-                            <li><a href="#">Class Schedule</a></li>
-                            <li><a href="#">Exam Schedule</a></li>
-                            <li><a href="#">Syllabus</a></li>
-                            <li><a href="#">Class Schedule</a></li>
+                            <li><a href="#">Sports</a></li>
+                            <li><a href="#">Cultural Activities</a></li>
+                            <li><a href="#">Scout/Girls' Guide</a></li>
+                            <li><a href="#">Red Crecent</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div><!-- End Block -->
+            <div class="col-xl-6 col-md-6 d-flexx" data-aos="fade-up" data-aos-delay="300" style="display:block;">
+                <div class="member" style="position:relative;">
+                    <div class="logo"><i class="bi bi-puzzle-fill cs"></i></div>
+                    <h4>Co-Curricular Activity</h4>
+                    <div style="text-align:left;">
+                        <ul>
+                            <li><a href="#">Debating Club</a></li>
+                            <li><a href="#">Math Club</a></li>
+                            <li><a href="#">Language Club</a></li>
+                            <li><a href="#">Innovation Club</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div><!-- End Block -->
+
+            <div class="col-xl-6 col-md-6 d-flexx" data-aos="fade-up" data-aos-delay="300" style="display:block;">
+                <div class="member" style="position:relative;">
+                    <div class="logo"><i class="bi bi-stack cs"></i></div>
+                    <h4>Resources</h4>
+                    <div style="text-align:left;">
+                        <ul>
+                            <li><a href="#">Digital Content</a></li>
+                            <li><a href="#">Library</a></li>
+                            <li><a href="#">Sheikh Russell Digital Lab</a></li>
+                            <li><a href="#">Playground</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div><!-- End Block -->
+            <div class="col-xl-6 col-md-6 d-flexx" data-aos="fade-up" data-aos-delay="300" style="display:block;">
+                <div class="member" style="position:relative;">
+                    <div class="logo"><i class="bi bi-lightbulb-fill cs"></i></div>
+                    <h4>Resources</h4>
+                    <div style="text-align:left;">
+                        <ul>
+                            <li><a href="#">Science Lab</a></li>
+                            <li><a href="#">Publications</a></li>
+                            <li><a href="#">Wall Magazine</a></li>
+                            <li><a href="#">Citizen Charter</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div><!-- End Block -->
+
+            <div class="col-xl-6 col-md-6 d-flexx" data-aos="fade-up" data-aos-delay="300" style="display:block;">
+                <div class="member" style="position:relative;">
+                    <div class="logo"><i class="bi bi-x-diamond-fill cs"></i></div>
+                    <h4>Misc</h4>
+                    <div style="text-align:left;">
+                        <ul>
+                            <li><a href="#">Success Story</a></li>
+                            <li><a href="#">Ex-Students</a></li>
+                            <li><a href="#">GPA 5 Holder</a></li>
+                            <li><a href="#">Ex-Honourable Teachers</a></li>
                         </ul>
                     </div>
                 </div>

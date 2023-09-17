@@ -12,7 +12,7 @@
   <meta content="" name="School College School Management Application Xeneen">
 
   <!-- Favicons -->
-  <link href="assets/images/favicon.png" rel="icon">
+  <link href="resources/logo.png" rel="icon">
   <link href="assets/images/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->

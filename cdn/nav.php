@@ -11,10 +11,12 @@
 <header id="header" class="header d-flex align-items-center">
 
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
         <a href="index.html" class="logo d-flex align-items-center">
             <!-- Uncomment the line below if you also wish to use an image logo -->
-            <!-- <img src="assets/img/logo.png" alt=""> -->
-            <h1>Impact<span>.</span></h1>
+            <img src="resources/logo.png" alt="">
+            <img src="resources/impact<?php echo $lang; ?>.png" alt="" style="width:300px;">
+            <!-- <h1>Impact<span>.</span></h1> -->
         </a>
         <nav id="navbar" class="navbar">
             <ul>
@@ -112,7 +114,7 @@
 
 
                 <li class="dropdown"><a href="#"><span>
-                            <img class="userlogo" src="images/favicon.png" alt="" />
+                            <img class="userlogo" src="<?php echo $usrpic; ?>" alt="" />
                         </span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
                     <ul>
                         <li style="text-align:center;"><b>
