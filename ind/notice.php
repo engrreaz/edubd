@@ -5,7 +5,9 @@
         <img src="assets/icon/announcement.png" alt="announcement" class="head-icon" />
 
         <div class=" section-header ex">
-            <h2>Notice Board</h2>
+            <h2>
+                <?php echo NOTICE_BOARD; ?>
+            </h2>
         </div>
 
         <style>
