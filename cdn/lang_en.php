@@ -54,6 +54,10 @@ define("SPHT", "Speech from Head Teacher");
 
 
 
+// Home Page
+define("NOTICE_BOARD", "Notice Board");
+
+
 define("ABT", "About");
 // Syllabus Page
 define("SYLLABUS_TITLE", "Syllabus");

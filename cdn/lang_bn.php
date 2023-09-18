@@ -43,6 +43,8 @@ define("SPHT", "প্রধান শিক্ষকের বাণী");
 
 
 
+// Home Page
+define("NOTICE_BOARD", "নোটিশ বোর্ড");
 
 
 
