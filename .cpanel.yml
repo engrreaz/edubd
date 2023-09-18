@@ -3,4 +3,3 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/eimbox/public_html/edubds
     - /bin/cp * $DEPLOYPATH
-    - /bin/cp style.css $DEPLOYPATH
