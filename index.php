@@ -31,10 +31,25 @@ require_once 'inc.php';
 
                 <!-- Indicators/dots -->
                 <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-                    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-                    <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+                    <?php
+                    $sql0 = "SELECT count(*) as cnt FROM upload where uploadtype='slider' and status = 1 ";
+                    $result0x = $conn->query($sql0);
+                    if ($result0x->num_rows > 0) {
+                        while ($row0 = $result0x->fetch_assoc()) {
+                            $tcnt = $row0["cnt"];
+                        }
+                    }
+                    for ($i = 0; $i < $tcnt; $i++) {
+                        if ($i == 0) {
+                            $actv = ' class="active" ';
+                        } else {
+                            $actv = '';
+                        }
+                        ?>
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="<?php echo $i; ?>" <?php echo $actv; ?>></button>
+                        <?php
+                    }
+                    ?>
                 </div>
                 <style>
                     .carousel-item {
@@ -50,36 +65,35 @@ require_once 'inc.php';
                         style="background:green; position:absolute; z-index:990; right:15px; bottom:15px; height:60px; width:60px;">
                     </div>
 
+                    <?php
+                    $sql0 = "SELECT * FROM upload where uploadtype='slider' and status = 1 order by id ";
+                    $result0bb = $conn->query($sql0);
+                    if ($result0bb->num_rows > 0) {
+                        while ($row0 = $result0bb->fetch_assoc()) {
+                            $filepath = $row0["location"];
+                            $piclink = $row0["link"];
+                            $pictitle = $row0["title" . $lang];
+                            $picsubtitle = $row0["subtitle" . $lang];
+
+                            ?>
+                            <div class=" carousel-item active">
+                                <img src="<?php echo $filepath; ?>" alt="Los Angeles" class="d-block" style="width:100%">
+                                <div class="carousel-caption">
+                                    <h3>
+                                        <?php echo $pictitle; ?>
+                                    </h3>
+                                    <p>
+                                        <?php echo $picsubtitle; ?>
+                                    </p>
+                                </div>
+                            </div>
+                            <?php
+                        }
+                    }
+                    ?>
 
 
-                    <div class=" carousel-item active">
-                        <img src="assets/img/about.jpg" alt="Los Angeles" class="d-block" style="width:100%">
-                        <div class="carousel-caption">
-                            <h3>Los Angeles</h3>
-                            <p>We had such a great time in LA!</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="assets/img/about-2.jpg" alt="Chicago" class="d-block" style="width:100%">
-                        <div class="carousel-caption">
-                            <h3>Chicago</h3>
-                            <p>Thank you, Chicago!</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="assets/img/breadcrumbs-bg.jpg" alt="New York" class="d-block" style="width:100%">
-                        <div class="carousel-caption">
-                            <h3>New York</h3>
-                            <p>We love the Big Apple!</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="assets/img/cta-bg.jpg" alt="New York" class="d-block" style="width:100%">
-                        <div class="carousel-caption">
-                            <h3>New York</h3>
-                            <p>We love the Big Apple!</p>
-                        </div>
-                    </div>
+
 
 
 
