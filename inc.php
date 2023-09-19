@@ -54,9 +54,6 @@ if ($lang == "en") {
 
 include_once('dbase.php');
 
-
-
-
 $uri = $_SERVER['REQUEST_URI'];
 $ip = $_SERVER['REMOTE_ADDR'];
 

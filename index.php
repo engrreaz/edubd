@@ -8,7 +8,6 @@ require_once 'inc.php';
 // fclose($cont);
 
 
-
 // active function
 // include "http://eimbox.com/cdn/hd.txt";
 ?>

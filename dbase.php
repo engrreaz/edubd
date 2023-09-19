@@ -16,7 +16,6 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 //     die("Connection failed: " . $conn->connect_error);
 // }
 
-
 $servername2 = "localhost";
 $username2 = "root";
 $password2 = "";
@@ -25,5 +24,4 @@ $eimbox = mysqli_connect($servername2, $username2, $password2, $dbname2);
 if (!$eimbox) {
     die("Connection failed: " . mysqli_connect_error());
 }
-
 ?>
