@@ -32,13 +32,13 @@
 
                     <div class="swiper-slide">
                         <div class="testimonial-wrap">
-                            <div class="testimonial-item " style="">
+                            <div class="testimonial-item " style="height:165px; background:red;">
 
 
                                 <div class="post-img blogbox" style="  ">
 
                                     <div class="corner-title">
-                                        <?php echo BSMCORNER; ?>
+                                        <!-- <?php echo BSMCORNER; ?> -->
                                     </div>
                                     <div style="text-align:center;">
                                         <img src="resources/bongobondhu/bsm-1.jpg" alt="" style="width:100%"
@@ -46,99 +46,31 @@
                                     </div>
 
                                 </div>
-
-
-                                <article style="">
-
-
-
-                                    <p class="post-category">Politics</p>
-
-                                    <h2 class="title">
-                                        <a href="blog-details.html">Dolorum optio tempore voluptas dignissimos</a>
-                                    </h2>
-
-                                    <div class="d-flex align-items-center">
-                                        <img src="assets/img/blog/blog-author.jpg" alt=""
-                                            class="img-fluid post-author-img flex-shrink-0 rnd" style="">
-                                        <div class="post-meta">
-                                            <small><time datetime="2022-01-01">Jan 1, 2022</time></small>
-                                        </div>
-                                    </div>
-                                    <p class="post-author">Maria Doe jskaksf skjksf
-                                        <br>
-                                        <small>Asstt. Teacher</small>
-                                    </p>
-
+                                <article style="color:white;">
+                                    <p class="post-category">Bongabondhu</p>
                                 </article>
-
-
-
-
-
-
-
-
-
-
-
-
                             </div>
                         </div>
                     </div><!-- End testimonial item -->
+
                     <div class="swiper-slide">
                         <div class="testimonial-wrap">
                             <div class="testimonial-item " style="">
-
-
                                 <div class="post-img blogbox" style="  ">
-
-
                                     <div style="text-align:center;">
                                         <img src="resources/bongobondhu/bsm-2.jpg" alt="" style="width:100%"
                                             class="img-fluid ">
                                     </div>
-
                                 </div>
-
-
                                 <article style="">
 
                                     <div class="corner-title">
-                                        <?php echo BSMCORNER; ?>
+                                        <!-- <?php echo BSMCORNER; ?> -->
                                     </div>
 
-                                    <p class="post-category">Politics</p>
-
-                                    <h2 class="title">
-                                        <a href="blog-details.html">Dolorum optio tempore voluptas dignissimos</a>
-                                    </h2>
-
-                                    <div class="d-flex align-items-center">
-                                        <img src="assets/img/blog/blog-author.jpg" alt=""
-                                            class="img-fluid post-author-img flex-shrink-0 rnd" style="">
-                                        <div class="post-meta">
-                                            <small><time datetime="2022-01-01">Jan 1, 2022</time></small>
-                                        </div>
-                                    </div>
-                                    <p class="post-author">Maria Doe jskaksf skjksf
-                                        <br>
-                                        <small>Asstt. Teachers</small>
-                                    </p>
+                                    <p class="post-category">Speech on 7 March, 1971</p>
 
                                 </article>
-
-
-
-
-
-
-
-
-
-
-
-
                             </div>
                         </div>
                     </div><!-- End testimonial item -->

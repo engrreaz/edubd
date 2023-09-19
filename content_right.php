@@ -20,7 +20,7 @@
                                 <img src="assets/img/blog/blog-1.jpg" alt="" class="img-fluid ">
                             </div>
 
-                            <article style="">
+                            <!-- <article style="">
 
 
 
@@ -42,20 +42,26 @@
                                     <small>Asstt. Teacher</small>
                                 </p>
 
-                            </article>
+                            </article> -->
+
+                        </div>
+                        <div class="testimonial-item " style="">
 
 
+                            <div class="post-img blogbox" style="  ">
 
-
-
-
-
-
-
+                                <div class="corner-title">Bangladesh</div>
+                                <img src="assets/img/blog/blog-1.jpg" alt="" class="img-fluid ">
+                            </div>
 
 
 
                         </div>
+
+
+
+
+
                     </div>
                 </div><!-- End testimonial item -->
 
