@@ -82,45 +82,45 @@ margin: auto;
 position: absolute;
 }
 
-   .langon {
-                background-color: white;
-                ;
-                border: 1px solid var(--primary-color);
-                border-radius: 8px;
-                color: var(--color-primary) !important;
-            }
+.langon {
+    background-color: white;
+    ;
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    color: var(--color-primary) !important;
+}
 
-            .langoff {
-                background-color: transparent;
-                border: 1px solid white;
-                border-radius: 8px;
-                color: white !important;
-            }
+.langoff {
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 8px;
+    color: white !important;
+}
 
-            #langbox a {
-                padding: 5px 15px;
-            }
+#langbox a {
+    padding: 5px 15px;
+}
 
-            .lengen {
-                font-size: 12px;
-            }
+.lengen {
+    font-size: 12px;
+}
 
-            .langbn {
-                font-size: 18px;
-                font-family: SutonnyOMJ;
-            }
+.langbn {
+    font-size: 18px;
+    font-family: SutonnyOMJ;
+}
 
-            .enn {
-                font-size: 12px;
-            }
-            .bnn {
-                font-size:16px;
-                font-family: SutonnyOMJ;
-            }
+.enn {
+    font-size: 12px;
+}
+.bnn {
+    font-size:16px;
+    font-family: SutonnyOMJ;
+}
 
-            .docpic {
-                display:block;
-                max-width:100%;
-                margin:auto;
-                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            }
+.docpic {
+    display:block;
+    max-width:100%;
+    margin:auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
