@@ -119,19 +119,14 @@ require_once 'inc.php';
                     </div>
 
 
-                    <div id="googleMap" style="margin-top:30px; width:100%;height:400px;"></div>
+                    <div id="googleMap" style="margin-top:30px; width:100%;height:400px;">
 
-                    <script>
-                        function myMap() {
-                            var mapProp = {
-                                center: new google.maps.LatLng(51.508742, -0.120850),
-                                zoom: 9,
-                            };
-                            var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
-                        }
-                    </script>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.560987516783!2d90.84201147366639!3d23.72736658966337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375441b49bb56edb%3A0xa11bb99c2b69fac2!2z4Kat4KeB4Kaw4Kat4KeB4Kaw4Ka_4Kef4Ka-IOCmhuCmsOCnjeCmpuCmtiDgpongpprgp43gppog4Kas4Ka_4Kam4KeN4Kav4Ka-4Kay4KefIChCaHVyYmh1cmlhIEFkYXJzaGEgSGlnaCBTY2hvb2wp!5e0!3m2!1sen!2sbd!4v1695412464838!5m2!1sen!2sbd"
+                            width="100%" height="450" class="docpic" style="border-radius:12px;" allowfullscreen=""
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-                    <script src="https://maps.googleapis.com/maps/api/js?key234=&callback=myMap"></script>
+                    </div>
 
 
 

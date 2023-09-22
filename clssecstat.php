@@ -28,7 +28,6 @@ require_once 'inc.php';
     th {
         vertical-align: middle;
         text-align: center;
-        ;
     }
 </style>
 
@@ -80,6 +79,29 @@ require_once 'inc.php';
                                             $cls = $row0["areaname"];
                                             $sec = $row0["subarea"];
 
+                                            $sql0x = "SELECT count(*) as stcnt FROM sessioninfo where sccode='$sccode' and sessionyear='$sy' and classname='$cls' and sectionname = '$sec'; ";
+                                            $result0bbx = $eimbox->query($sql0x);
+                                            if ($result0bbx->num_rows > 0) {
+                                                while ($row0x = $result0bbx->fetch_assoc()) {
+                                                    $stcnt = $row0x["stcnt"];
+                                                }
+                                            }
+
+                                            $sql0x = "SELECT count(*) as stcnt FROM sessioninfo where sccode='$sccode' and sessionyear='$sy' and classname='$cls' and sectionname = '$sec' and gender='Boy'; ";
+                                            $result0bbx = $eimbox->query($sql0x);
+                                            if ($result0bbx->num_rows > 0) {
+                                                while ($row0x = $result0bbx->fetch_assoc()) {
+                                                    $boy = $row0x["stcnt"];
+                                                }
+                                            }
+
+                                            $sql0x = "SELECT count(*) as stcnt FROM sessioninfo where sccode='$sccode' and sessionyear='$sy' and classname='$cls' and sectionname = '$sec' and religion='Islam'; ";
+                                            $result0bbx = $eimbox->query($sql0x);
+                                            if ($result0bbx->num_rows > 0) {
+                                                while ($row0x = $result0bbx->fetch_assoc()) {
+                                                    $islam = $row0x["stcnt"];
+                                                }
+                                            }
                                             ?>
                                             <tr>
                                                 <td style="vertical-align:middle; padding-left:15px;">
@@ -89,26 +111,26 @@ require_once 'inc.php';
                                                     <?php echo $sec; ?>
                                                 </td>
                                                 <td style="vertical-align:middle; padding-right:15px; text-align:center;">
-                                                    <?php echo random_int(55, 100); ?>
+                                                    <?php echo $stcnt; ?>
                                                 </td>
 
                                                 <td style="vertical-align:middle; padding-right:15px; text-align:center;">
-                                                    <?php echo random_int(55, 100); ?>
+                                                    <?php echo $boy; ?>
                                                 </td>
                                                 <td style="vertical-align:middle; padding-right:15px; text-align:center;">
-                                                    <?php echo random_int(55, 100); ?>
+                                                    <?php echo $stcnt - $boy; ?>
                                                 </td>
                                                 <td style="vertical-align:middle; padding-right:15px; text-align:center;">
-                                                    <?php echo random_int(55, 100); ?>
+                                                    <?php echo $islam; ?>
                                                 </td>
                                                 <td style="vertical-align:middle; padding-right:15px; text-align:center;">
-                                                    <?php echo random_int(55, 100); ?>
+                                                    <?php echo $stcnt - $islam; ?>
                                                 </td>
                                                 <td style="vertical-align:middle; padding-right:15px; text-align:center;">
-                                                    <?php echo random_int(55, 100); ?>
+                                                    <?php echo 0; ?>
                                                 </td>
                                                 <td style="vertical-align:middle; padding-right:15px; text-align:center;">
-                                                    <?php echo random_int(55, 100); ?>
+                                                    <?php echo 0; ?>
                                                 </td>
                                             </tr>
                                             <?php

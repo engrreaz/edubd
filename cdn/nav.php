@@ -102,10 +102,10 @@
                 </li>
 
 
-                <li><a href="#about">
+                <li><a href="#">
                         <?php echo GALLERY; ?>
                     </a></li>
-                <li><a href="blog.htmls">
+                <li><a href="#">
                         <?php echo BLOG; ?>
                     </a></li>
                 <li><a href="contacts.php">
@@ -113,10 +113,12 @@
                     </a></li>
 
 
-                <li class="dropdown"><a href="#"><span>
+                <li class="dropdown" style="">
+                    <a href="#">
+                        <span>
                             <img class="userlogo" src="<?php echo $usrpic; ?>" alt="" />
                         </span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
-                    <ul>
+                    <ul style="position:absolute; right:0; left:-150px; ">
                         <li style="text-align:center;"><b>
                                 <?php echo $usr; ?>
                             </b></li>
