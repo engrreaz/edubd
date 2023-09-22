@@ -34,7 +34,7 @@
 
 
                                     <div class="post-img blogbox" style="  ">
-                                        <img src="assets/img/blog/<?php echo $pic; ?>" alt="" class="img-fluid " style="width:100%; height:200px; display: flex; 
+                                        <img src="resources/blog/<?php echo $pic; ?>" alt="" class="img-fluid " style="width:100%; height:200px; display: flex; 
   flex-wrap: wrap;">
                                     </div>
 
@@ -53,7 +53,7 @@
                                         </h2>
 
                                         <div class="d-flex align-items-center">
-                                            <img src="assets/img/blog/blog-author.jpg" alt=""
+                                            <img src="resources/blog/blog-author.jpg" alt=""
                                                 class="img-fluid post-author-img flex-shrink-0 rnd" style="">
                                             <div class="post-meta" style="padding-left:8px;">
                                                 <small><time datetime="<?php echo $posttime; ?>">Jan 1, 2022</time></small>

@@ -20,6 +20,8 @@ $sy = date('Y');
 $tday = date('Y-m-d');
 $cur = date('Y-m-d H:i:s');
 $rootuser = 'bahs103187';
+$sccode = "103187";
+
 
 define("CDN", "http://localhost/edubd/cdn/");
 
@@ -40,7 +42,7 @@ if ($lang == "en") {
     define("scfounder", "Founder : Alhaz Hz. Muhammad Sree Krishno");
     define("scmobile", "01988123456");
     define("scmpo", "230251487");
-    $sccode = "103187";
+    define("SCCODE", "103187");
 } else {
     require_once 'cdn/lang_bn.php';
     define("scname", "মার্কামারা বিশ্ববিদ্যালয়");
@@ -48,7 +50,7 @@ if ($lang == "en") {
     define("scfounder", "প্রতিষ্ঠাতা : আলহাজ্ব হযরত মোহাম্মদ শ্রীকৃঞ্চ");
     define("scmobile", "০১৯৮৭৬৫৩৪৫৭৬");
     define("scmpo", "২৯৪৬৪৮৪");
-    $sccode = "১০৩১৮৭";
+    define("SCCODE", "১০৩১৮৭");
 }
 
 

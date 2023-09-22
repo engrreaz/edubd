@@ -4,7 +4,6 @@ $sy = date('Y');
 $tday = date('Y-m-d');
 $cur = date('Y-m-d H:i:s');
 $rootuser = 'bahs103187';
-
 $sccode = "103187";
 
 

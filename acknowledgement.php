@@ -43,9 +43,10 @@ require_once 'inc.php';
                         </div>
 
                         <div>
-                            <object data="resources/syllabus/SixJoba.pdf" type="application/pdf" width="100%"
+                            <img src="resources/acknowledgement.png" class="img-fluid rounded-4 mb-4 docpic" alt="">
+                            <object data="resources/acknowledgement.pdf" type="application/pdf" width="100%"
                                 height="1000">
-                                alt : <a href="resources/syllabus/SixJoba.pdf">Class Routine</a>
+                                alt : <a href="resources/acknowledgement.pdf">Institute Acknowledgement Letter</a>
                             </object>
                         </div>
 

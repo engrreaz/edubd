@@ -40,6 +40,8 @@ require_once 'inc.php';
 
                         </div>
 
+                        <img src="resources/about-institute.jpg" class="img-fluid rounded-4 mb-4" alt="">
+
                         <div style="text-align:justify">
                             <?php
                             $sql0 = "SELECT * FROM txtnote where title='aboutus'";

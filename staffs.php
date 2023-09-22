@@ -40,9 +40,9 @@ require_once 'inc.php';
                             <p>
                                 <?php echo STAFF_SUBTITLE; ?>
                             </p>
-                            <p
+                            <!-- <p
                                 style="display:inline-block; margin-top:15px; padding:8px 20px; border:1px solid var(--color-primary); border-radius:8px;">
-                                Committee Active from <b>Monday, 31 November, 2025</b></p>
+                                Committee Active from <b>Monday, 31 November, 2025</b></p> -->
                         </div>
 
 
@@ -53,8 +53,9 @@ require_once 'inc.php';
 
 
 
-                        <section id="portfolio" class="portfolio">
-                            <div class="container" data-aos="fade-up">
+                        <section id="portfolio" class="portfolio" style="z-index:990;">
+                            <div class="container" data-aos="fade-up"
+                                style="border:0px solid red; margin-top:-90px; -index:999;">
 
 
                                 <div class="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry"
@@ -63,10 +64,8 @@ require_once 'inc.php';
                                     <div>
                                         <ul class="portfolio-flters">
                                             <li data-filter="*" class="filter-active">All</li>
-                                            <li data-filter=".filter-app">App</li>
-                                            <li data-filter=".filter-product">Product</li>
-                                            <li data-filter=".filter-branding">Branding</li>
-                                            <li data-filter=".filter-books">Books</li>
+                                            <li data-filter=".filter-app">Staffs</li>
+
                                         </ul><!-- End Portfolio Filters -->
                                     </div>
 
@@ -78,22 +77,26 @@ require_once 'inc.php';
                                         if ($result0bb->num_rows > 0) {
                                             while ($row0 = $result0bb->fetch_assoc()) {
                                                 $tname = $row0["tname"];
+                                                $tname = $row0["tname"];
+                                                $tid = $row0["tid"];
                                                 // { {
-                                        
+                                                if (file_exists('resources/teachers/' . $tid . '.png')) {
+                                                    $pth = 'resources/teachers/' . $tid . '.png';
+                                                } else {
+                                                    $pth = 'resources/teachers/no-img.png';
+                                                }
                                                 ?>
 
                                                 <div class="col-xl-4 col-md-6 portfolio-item filter-app">
                                                     <div class="portfolio-wrap">
-                                                        <a href="assets/img/portfolio/app-1.jpg"
+                                                        <a href="teacher-details.php?id=<?php echo $tid; ?>"
                                                             data-gallery="portfolio-gallery-app" class="glightbox"><img
-                                                                src="assets/img/portfolio/app-1.jpg" class="img-fluid"
-                                                                alt=""></a>
+                                                                src="<?php echo $pth; ?>" class="img-fluid"
+                                                                style="height:200px;" alt=""></a>
                                                         <div class="portfolio-info">
-                                                            <h4 style="overflow:auto; height:35px;"><a
-                                                                    href="portfolio-details.html" title="More Details">
-                                                                    <?php echo $tname; ?>
-                                                                </a>
-                                                            </h4>
+                                                            <div style="overflow:hidden; height:25px;">
+                                                                <?php echo $tname; ?>
+                                                            </div>
                                                             <p>Designation</p>
                                                         </div>
                                                     </div>

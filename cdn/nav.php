@@ -12,7 +12,7 @@
 
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-        <a href="index.html" class="logo d-flex align-items-center">
+        <a href="index.php" class="logo d-flex align-items-center">
             <!-- Uncomment the line below if you also wish to use an image logo -->
             <img src="resources/logo.png" alt="">
             <img src="resources/impact<?php echo $lang; ?>.png" alt="" style="width:300px;">

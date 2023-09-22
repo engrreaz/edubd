@@ -56,6 +56,7 @@ and defines expectations and responsibilities. It is generally an overview or su
 // SMC Page
 define("SMC_TITLE", "চলতি বিদ্যালয় ব্যবস্থাপনা পর্ষদ");
 define("SMC_SUBTITLE", "In exercise of the powers conferred by section 39 of the Intermediate and Secondary Education Ordinance, 1961 (E.£. Ord, XXXIII of 1961)");
+define("COMMITTE_MEMBER", "সম্মানিত পরিচালনা পর্ষদের সদস্যবৃন্দ");
 // Teachers Page
 define("TEACHER_TITLE", "আমাদের সম্মানিত শিক্ষকমন্ডলী");
 define("TEACHER_SUBTITLE", "A teacher, also called a schoolteacher or formally an educator, is a person who helps students to acquire knowledge, competence, or virtue, via the practice of teaching.");
@@ -101,4 +102,19 @@ define("LINKS2", "&nbsp;");
 define("PAGEVIEW", "সর্বমোট দর্শনার্থী");
 define("UNIQUE", "একক দর্শনার্থী");
 define("TDVISIT", "আজকের দর্শনার্থী");
+
+
+
+define("FHOME", "প্রথম পাতা");
+define("FABOUT", "আমাদের সম্পর্কে");
+define("FDOC", "প্রাতিষ্ঠানিক দলিলসমূহ");
+define("FTEACHER", "শিক্ষকমন্ডলী");
+define("FCOMM", "কমিটিসমূহ");
+define("FCLSSEC", "শ্রেণি ও শাখাসমূহ");
+define("FGALLERY", "গ্যালারী");
+define("FBLOG", "ব্লগ");
+define("FRESOURCE", "রিসোর্সসমূহ");
+define("FCCA", "সহ-শিক্ষা কার্যক্রম");
+
+
 ?>

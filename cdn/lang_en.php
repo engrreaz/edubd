@@ -36,17 +36,6 @@ define("COUNCIL", "Student Council");
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 // Right Panel
 define("BSMCORNER", "Bongobondhu Corner");
 define("SPCHAIRMAN", "Speech from Chairman");
@@ -66,6 +55,8 @@ and defines expectations and responsibilities. It is generally an overview or su
 // SMC Page
 define("SMC_TITLE", "Ongoing School Managing Committee (SMC)");
 define("SMC_SUBTITLE", "In exercise of the powers conferred by section 39 of the Intermediate and Secondary Education Ordinance, 1961 (E.£. Ord, XXXIII of 1961)");
+define("COMMITTE_MEMBER", "Honourable Committee Members");
+
 // Teachers Page
 define("TEACHER_TITLE", "Our Honourable Teachers");
 define("TEACHER_SUBTITLE", "A teacher, also called a schoolteacher or formally an educator, is a person who helps students to acquire knowledge, competence, or virtue, via the practice of teaching.");
@@ -107,9 +98,20 @@ define("AFF_SUBTITLE", ".................................");
 
 // Footer Section
 define("LINKS", "Useful Links");
-define("LINKS2", "");
+define("LINKS2", "&nbsp;");
 define("PAGEVIEW", "Total Page Views");
 define("UNIQUE", "Unique Visitor");
 define("TDVISIT", "Visit Today");
+
+define("FHOME", "Home");
+define("FABOUT", "About Us");
+define("FDOC", "Institute Documents");
+define("FTEACHER", "Teachers");
+define("FCOMM", "Committees");
+define("FCLSSEC", "Classes & Sections");
+define("FGALLERY", "Gallery");
+define("FBLOG", "Blog");
+define("FRESOURCE", "Resources");
+define("FCCA", "Co-Curricular Activities");
 
 ?>

@@ -38,10 +38,20 @@ $st = $cnt - 5;
                 <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita
                     valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
                 <div class="social-links d-flex mt-4">
-                    <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-                    <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-                    <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-                    <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                    <?php
+                    $sql0 = "SELECT * FROM txtnote where title='socialicon' order by id";
+                    $result0t = $conn->query($sql0);
+                    if ($result0t->num_rows > 0) {
+
+                        while ($row0 = $result0t->fetch_assoc()) {
+                            $slnk = $row0["texten"];
+                            $sico = $row0["textbn"];
+
+                            echo '<a href="' . $slnk . '" class="' . $sico . '"><i class="bi bi-' . $sico . '"></i></a>';
+                        }
+
+                    }
+                    ?>
                 </div>
             </div>
 
@@ -50,11 +60,22 @@ $st = $cnt - 5;
                     <?php echo LINKS; ?>
                 </h4>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Terms of service</a></li>
-                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="index.php">
+                            <?php echo FHOME; ?>
+                        </a></li>
+                    <li><a href="about-us.php">
+                            <?php echo FABOUT; ?>
+                        </a></li>
+                    <li><a href="document.php">
+                            <?php echo FDOC; ?>
+                        </a></li>
+                    <li><a href="teacher.php">
+                            <?php echo FTEACHER; ?>
+                        </a></li>
+                    <li><a href="committees">
+                            <?php echo FCOMM; ?>
+                        </a></li>
+
                 </ul>
             </div>
 
@@ -63,11 +84,21 @@ $st = $cnt - 5;
                     <?php echo LINKS2; ?>
                 </h4>
                 <ul>
-                    <li><a href="#">Web Design</a></li>
-                    <li><a href="#">Web Development</a></li>
-                    <li><a href="#">Product Management</a></li>
-                    <li><a href="#">Marketing</a></li>
-                    <li><a href="#">Graphic Design</a></li>
+                    <li><a href="clssec.php">
+                            <?php echo FCLSSEC; ?>
+                        </a></li>
+                    <li><a href="gallery.php">
+                            <?php echo FGALLERY; ?>
+                        </a></li>
+                    <li><a href="blog.php">
+                            <?php echo FBLOG; ?>
+                        </a></li>
+                    <li><a href="resources.php">
+                            <?php echo FRESOURCE; ?>
+                        </a></li>
+                    <li><a href="cca">
+                            <?php echo FCCA; ?>
+                        </a></li>
                 </ul>
             </div>
 
