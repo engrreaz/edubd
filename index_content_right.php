@@ -55,14 +55,14 @@
 
                     <div class="swiper-slide">
                         <div class="testimonial-wrap">
-                            <div class="testimonial-item " style="">
+                            <div class="testimonial-item " style="height:165px; background:red;">
                                 <div class="post-img blogbox" style="  ">
                                     <div style="text-align:center;">
                                         <img src="resources/bongobondhu/bsm-2.jpg" alt="" style="width:100%"
                                             class="img-fluid ">
                                     </div>
                                 </div>
-                                <article style="">
+                                <article style="color:white;">
 
                                     <div class="corner-title">
                                         <!-- <?php echo BSMCORNER; ?> -->

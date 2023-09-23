@@ -15,7 +15,6 @@
 
         <div class="row gy-4">
             <div class="col-lg-6">
-
                 <img src="resources/about-institute.jpg" class="img-fluid rounded-4 mb-4" alt="">
             </div>
             <div class="col-lg-6">
@@ -35,8 +34,8 @@
                         <br>
                         <a href="about-us.php" class="readmore stretched-link">Read more <i
                                 class="bi bi-arrow-right"></i></a>
-
                     </p>
+
                     <!-- <ul>
                         <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip
                             ex ea
@@ -51,7 +50,6 @@
                             storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
                     </ul> -->
 
-
                     <div class="position-relative mt-4">
                         <img src="assets/img/about-2.jpg" class="img-fluid rounded-4" alt="">
                         <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox play-btn"></a>
@@ -59,6 +57,5 @@
                 </div>
             </div>
         </div>
-
     </div>
 </section><!-- End About Us Section -->
