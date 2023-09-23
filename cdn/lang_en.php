@@ -1,7 +1,7 @@
 <?php
 // define("", "");
 define("EIIN", "EIIN : ");
-define("MPOINDEX", "MPO Index : ");
+define("MPOINDEX", "MPO Code : ");
 
 // Navigation Title
 define("HOME", "Home");

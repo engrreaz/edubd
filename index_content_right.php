@@ -84,6 +84,72 @@
         </div>
     </section><!-- End Testimonials Section -->
 
+    <section id="dipumoni" class="testimonials" style="margin-top:-170px;">
+        <div class="container" data-aos="fade-up">
+
+
+
+            <div class="slides-1 swiper" data-aos="fade-in" data-aos-delay="100">
+                <div class="swiper-wrapper">
+
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-wrap">
+                            <div class="testimonial-item " style=" ">
+
+
+                                <div class="post-img blogbox" style="  ">
+
+                                    <div class="corner-title">
+                                        <!-- <?php echo BSMCORNER; ?> -->
+                                    </div>
+                                    <div style="text-align:center;">
+                                        <img src="resources/bongobondhu/dipumoni.jpg" alt="" style="width:100%"
+                                            class="img-fluid ">
+                                    </div>
+
+                                </div>
+                                <article style="color:var(--color-primary);">
+                                    <p class="post-category">Dr. Dipu Moni</p>
+                                    <p style="font-size:12px; margin-top:-10px;">Minister, Ministry of Education</p>
+                                </article>
+                            </div>
+                        </div>
+                    </div><!-- End testimonial item -->
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-wrap">
+                            <div class="testimonial-item " style=" ">
+
+
+                                <div class="post-img blogbox" style="  ">
+
+                                    <div class="corner-title">
+                                        <!-- <?php echo BSMCORNER; ?> -->
+                                    </div>
+                                    <div style="text-align:center; ">
+                                        <img src="resources/bongobondhu/cumiillaboard.jpg" alt=""
+                                            style="height:150px; width:100%;" class="img-fluid ">
+                                    </div>
+
+                                </div>
+                                <article style="color:var(--color-primary);">
+                                    <p class="post-category">Prof. Md. Jamal Naser</p>
+                                    <p style="font-size:12px; margin-top:-10px;">Chairman, Cumilla Education Board.</p>
+                                </article>
+                            </div>
+                        </div>
+                    </div><!-- End testimonial item -->
+
+
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </div>
+    </section><!-- End Testimonials Section -->
+
 
 
     <section id="chairman" class="testimonials" style="">
@@ -118,13 +184,18 @@
                                     }
                                     ?>
                                     <div>
-                                        <h3>
-                                            <?php echo $nam; ?>
-                                        </h3>
+                                        <h4>
+                                            <?php echo $nam; ?><small>, NDC</small>
+                                        </h4>
                                         <h4>
                                             <?php echo $post; ?>
                                         </h4>
-                                        <?php echo $addr; ?>
+                                        <?php echo scname; ?><br>
+                                        & <br>
+                                        <small>Secretary,<br>
+                                            Ministry of Chittagong Hill Tracts Affairs</small>
+
+
                                     </div>
                                 </div>
                                 <p style="text-align:justify">

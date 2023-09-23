@@ -72,6 +72,7 @@ require_once 'inc.php';
                                 </thead>
                                 <tbody>
                                     <?php
+                                    $tst = 0;
                                     $sql0 = "SELECT * FROM areas where user='$rootuser' and sessionyear='$sy' order by idno; ";
                                     $result0bb = $eimbox->query($sql0);
                                     if ($result0bb->num_rows > 0) {
@@ -85,7 +86,10 @@ require_once 'inc.php';
                                                 while ($row0x = $result0bbx->fetch_assoc()) {
                                                     $stcnt = $row0x["stcnt"];
                                                 }
+                                            } else {
+                                                $stcnt = 0;
                                             }
+                                            $tst = $tst + $stcnt;
 
                                             $sql0x = "SELECT count(*) as stcnt FROM sessioninfo where sccode='$sccode' and sessionyear='$sy' and classname='$cls' and sectionname = '$sec' and gender='Boy'; ";
                                             $result0bbx = $eimbox->query($sql0x);
@@ -137,6 +141,20 @@ require_once 'inc.php';
                                         }
                                     }
                                     ?>
+
+                                    <tr style="font-weight:700;">
+                                        <td>Total :</td>
+                                        <td></td>
+                                        <td style="text-align:center;">
+                                            <?php echo $tst; ?>
+                                        </td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
                                 </tbody>
                             </table>
                         </div>

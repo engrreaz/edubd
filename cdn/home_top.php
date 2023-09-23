@@ -10,7 +10,7 @@
                     <?php echo scaddress; ?>
                     <br>
                     <b>
-                        <?php echo scfounder; ?>
+                        <?php echo estd; ?>
                     </b>
                     <br>
 

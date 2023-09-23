@@ -1,6 +1,6 @@
 <?php
 define("EIIN", "ইআইআইএন : ");
-define("MPOINDEX", "এমপিও ইনডেক্স : ");
+define("MPOINDEX", "এমপিও কোড : ");
 // Navigation Title
 define("HOME", "প্রথম পাতা");
 define("ABOUT", "সম্পর্কে");

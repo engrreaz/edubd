@@ -31,24 +31,26 @@ define("CDN", "http://localhost/edubd/cdn/");
 
 define("API", "dsgyft6868rdyhdtur66789-ldyr");
 
-define("scemail", "abc@email.com");
+define("scemail", "saidur592rahman@yahoo.com");
 define("scweb", "https://www.webaddress.edu.bd");
 define("a", "");
 
 if ($lang == "en") {
     require_once 'cdn/lang_en.php';
-    define("scname", "**** esse654se ffsfsff sfsefsfsfsfs sfs s");
-    define("scaddress", "Honululu, Miami, USA");
+    define("scname", "Bhurbhuria Adarsha High School & College");
+    define("scaddress", "Bhurbhuria, Bancharmpur, Brahmanbaria.");
     define("scfounder", "Founder : Alhaz Hz. Muhammad Sree Krishno");
-    define("scmobile", "01988123456");
+    define("estd", "Estd. 1999");
+    define("scmobile", "01309103187");
     define("scmpo", "230251487");
     define("SCCODE", "103187");
 } else {
     require_once 'cdn/lang_bn.php';
-    define("scname", "মার্কামারা বিশ্ববিদ্যালয়");
-    define("scaddress", "হনুলুলু, মিয়ামী বিচ, চট্টগ্রাম");
+    define("scname", "ভুরভুরিয়া আদর্শ উচ্চ বিদ্যালয় ও কলেজ");
+    define("scaddress", "ভুরভুরিয়া, বাঞ্ছারামপুর, ব্রাহ্মণবাড়িয়া।");
     define("scfounder", "প্রতিষ্ঠাতা : আলহাজ্ব হযরত মোহাম্মদ শ্রীকৃঞ্চ");
-    define("scmobile", "০১৯৮৭৬৫৩৪৫৭৬");
+    define("estd", "প্রতিষ্ঠাকাল : ১৯৯৯");
+    define("scmobile", "১০৩০৯১০৩১৮৭");
     define("scmpo", "২৯৪৬৪৮৪");
     define("SCCODE", "১০৩১৮৭");
 }
