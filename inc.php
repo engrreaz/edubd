@@ -27,8 +27,6 @@ define("CDN", "http://localhost/edubd/cdn/");
 
 // phpinfo();
 
-
-
 define("API", "dsgyft6868rdyhdtur66789-ldyr");
 
 define("scemail", "saidur592rahman@yahoo.com");
@@ -55,7 +53,6 @@ if ($lang == "en") {
     define("SCCODE", "১০৩১৮৭");
 }
 
-
 include_once('dbase.php');
 
 $uri = $_SERVER['REQUEST_URI'];
@@ -64,36 +61,19 @@ $ip = $_SERVER['REMOTE_ADDR'];
 $vst = "INSERT INTO visitor VALUES (NULL, '$uri','$ip','$tday','$cur')";
 $conn->query($vst);
 
-
 // USER Information
 $usr = $usr;
 $usrname = 'Name';
 $usrpic = 'assets/images/user.png';
 
-
-
 if (strpos($_SERVER['REQUEST_URI'], 'admin')) {
-
     include 'header.php';
-    ?>
-
-    <body onclick="load();">
-
-        <?php
-        include '../cdn/home_top.php';
-        include '../cdn/nav.php';
-
-
+    echo '<body onclick="load();">';
+    include '../cdn/home_top.php';
+    include 'nav.php';
 } else {
     include 'cdn/header.php';
-
-
-    ?>
-
-
-        <body onclick="load();">
-
-            <?php
-            include 'cdn/home_top.php';
-            include 'cdn/nav.php';
+    echo '<body onclick="load();">';
+    include 'cdn/home_top.php';
+    include 'cdn/nav.php';
 }

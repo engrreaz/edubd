@@ -1,7 +1,7 @@
 <?php
 require_once '../inc.php';
 ?>
-
+<link rel="stylesheet" type="text/css" href="css.css" />
 <!-- ======= Breadcrumbs ======= -->
 <div class="breadcrumbs">
     <nav>
@@ -94,7 +94,7 @@ require_once '../inc.php';
                         <?php
 
                         // Get an array of all files in the directory using glob()
-                        $files = glob('../resources/*.jpg');
+                        $files = glob('../*.jpeg');
 
                         // Loop through the array of files
                         foreach ($files as $file) {
@@ -104,7 +104,8 @@ require_once '../inc.php';
                             echo $file . "\n<br>";
                         }
 
-                        include 'upload.php';
+                        // include 'upload.php';
+                        include 'progressupload.php';
                         ?>
 
                     </div>
@@ -124,7 +125,35 @@ require_once '../inc.php';
 <?php include 'bottom.php'; ?>
 
 
+<script src="https://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.3.0/jquery.form.min.js"
+    integrity="sha512-YUkaLm+KJ5lQXDBdqBqk7EVhJAdxRnVdT2vtCzwPHSweCzyMgYV/tgGF4/dCyqtCC2eCphz0lRQgatGVdfR0ww=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-<script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#uploadForm').submit(function (e) {
+            $("#progress-bar").width('0%');
+            if ($('#userImage').val()) {
+                e.preventDefault();
+                $('#loader-icon').show();
+                $(this).ajaxSubmit({
+                    target: '#targetLayer',
+                    beforeSubmit: function () {
+                        $("#progress-bar").width('0%');
+                    },
+                    uploadProgress: function (event, position, total, percentComplete) {
+                        $("#progress-bar").width(percentComplete + '%');
+                        $("#progress-bar").html('<div id="progress-status" class="text-center">' + percentComplete + ' %</div>')
+                    },
+                    success: function () {
+                        $('#loader-icon').hide();
+                    },
+                    resetForm: true
+                });
+                return false;
+            }
+        });
+    });
 
 </script>
