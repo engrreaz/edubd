@@ -15,7 +15,7 @@
         <a href="index.php" class="logo d-flex align-items-center">
             <!-- Uncomment the line below if you also wish to use an image logo -->
             <img src="resources/logo.png" alt="">
-            <img src="resources/impact<?php echo $lang; ?>.png" alt="" style="width:300px;">
+            <img src="resources/impact<?php echo $lang; ?>.png" alt="" style="width:250px;">
             <!-- <h1>Impact<span>.</span></h1> -->
         </a>
         <nav id="navbar" class="navbar">
