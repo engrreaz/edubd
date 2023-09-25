@@ -26,6 +26,8 @@
                         $author = $row0["author"];
                         $posttime = $row0["posttime"];
                         $pic = $row0["pic"];
+                        $authpic = $row0["authpic"];
+                        $post = $row0["post"];
                         ?>
 
                         <div class="swiper-slide">
@@ -38,22 +40,22 @@
   flex-wrap: wrap;">
                                     </div>
 
-                                    <article style="">
+                                    <article style=" font-style:normal;">
 
 
 
-                                        <p class="post-category">
+                                        <p class="post-categorys" ‍style="font-size:14px; font-style:normal;">
                                             <?php echo $category; ?>
                                         </p>
 
-                                        <h2 class="title">
+                                        <h4 class="title">
                                             <a href="#">
                                                 <?php echo $posttitle; ?>
                                             </a>
-                                        </h2>
+                                        </h4>
 
                                         <div class="d-flex align-items-center">
-                                            <img src="resources/blog/blog-author.jpg" alt=""
+                                            <img src="resources/teacher/<?php echo $authpic; ?>" alt=""
                                                 class="img-fluid post-author-img flex-shrink-0 rnd" style="">
                                             <div class="post-meta" style="padding-left:8px;">
                                                 <small><time datetime="<?php echo $posttime; ?>">Jan 1, 2022</time></small>
@@ -62,7 +64,7 @@
                                                         <?php echo $author; ?>
                                                     </b>
                                                     <br>
-                                                    <small style="font-size:11px;">Asstt. Teacher</small>
+                                                    <small style="font-size:11px;"><?php echo $post; ?></small>
                                                 </p>
                                             </div>
 

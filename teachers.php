@@ -128,11 +128,13 @@ require_once 'inc.php';
                                             while ($row0 = $result0bb->fetch_assoc()) {
                                                 $tname = $row0["tname"];
                                                 $tid = $row0["tid"];
+                                                $position = $row0["position"];
+
                                                 // { {
-                                                if (file_exists('resources/teachers/' . $tid . '.png')) {
-                                                    $pth = 'resources/teachers/' . $tid . '.png';
+                                                if (file_exists('resources/teacher/' . $tid . '.jpg')) {
+                                                    $pth = 'resources/teacher/' . $tid . '.jpg';
                                                 } else {
-                                                    $pth = 'resources/teachers/no-img.png';
+                                                    $pth = 'resources/teacher/no-img.png';
                                                 }
                                                 ?>
 
@@ -141,12 +143,14 @@ require_once 'inc.php';
                                                         <a href="teacher-details.php?id=<?php echo $tid; ?>"
                                                             data-gallery="portfolio-gallery-app" class="glightbox"><img
                                                                 src="<?php echo $pth; ?>" class="img-fluid"
-                                                                style="height:200px;" alt=""></a>
+                                                                style="height:200px; width:100%;" alt=""></a>
                                                         <div class="portfolio-info">
                                                             <div style="overflow:hidden; height:25px;">
                                                                 <?php echo $tname; ?>
                                                             </div>
-                                                            <p>Social Science</p>
+                                                            <p>
+                                                                <?php echo $position; ?>
+                                                            </p>
                                                         </div>
                                                     </div>
                                                 </div><!-- End Portfolio Item -->

@@ -60,8 +60,8 @@ require_once 'inc.php';
                 <!-- The slideshow/carousel -->
                 <div class="carousel-inner">
 
-                    <div
-                        style="background:green; position:absolute; z-index:990; right:15px; bottom:15px; height:60px; width:60px;">
+                    <div style="position:absolute; z-index:990; right:15px; bottom:15px; height:60px; width:60px;">
+                        <img src="resources/logo.png" style=" height:60px; width:60px;" />
                     </div>
 
                     <?php
@@ -76,7 +76,8 @@ require_once 'inc.php';
 
                             ?>
                             <div class=" carousel-item active">
-                                <img src="<?php echo $filepath; ?>" alt="Los Angeles" class="d-block" style="width:100%">
+                                <img src="<?php echo $filepath; ?>" alt="Los Angeles" class="d-block"
+                                    style="width:100%; position:absolute; top:-40%;">
                                 <div class="carousel-caption">
                                     <h3>
                                         <?php echo $pictitle; ?>

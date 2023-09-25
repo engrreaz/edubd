@@ -17,7 +17,7 @@ require_once 'inc.php';
                     <?php echo MANAGEMENT; ?>
                 </li>
                 <li>
-                    <?php echo STAFF; ?>
+                    <?php echo TEACHER; ?>
                 </li>
             </ol>
         </div>
@@ -35,16 +35,68 @@ require_once 'inc.php';
 
                         <div class="section-header">
                             <h2>
-                                <?php echo STAFF_TITLE; ?>
+                                <?php echo TEACHER_TITLE; ?>
                             </h2>
                             <p>
-                                <?php echo STAFF_SUBTITLE; ?>
+                                <?php echo TEACHER_SUBTITLE; ?>
                             </p>
                             <!-- <p
                                 style="display:inline-block; margin-top:15px; padding:8px 20px; border:1px solid var(--color-primary); border-radius:8px;">
                                 Committee Active from <b>Monday, 31 November, 2025</b></p> -->
                         </div>
 
+                        <!-- <div class="section-body">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Members Name & Title</th>
+                                        <th>Address & Mobile</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <?php
+                                    $sql0 = "SELECT * FROM committee where type='smc'  order by sl; ";
+                                    $result0bb = $conn->query($sql0);
+                                    if ($result0bb->num_rows > 0) {
+                                        while ($row0 = $result0bb->fetch_assoc()) {
+                                            $member = $row0["memberen"];
+                                            $post = $row0["posten"];
+                                            $add = $row0["adden"];
+                                            $pmobile = $row0["mobileen"];
+
+                                            ?>
+                                            <tr>
+                                                <td style="vertical-align:middle; padding-left:15px;">
+                                                    <h5 style="color:var(--color-primary); font-weight:500;">
+                                                        <?php echo $member; ?>
+                                                    </h5>
+                                                    <?php echo $post; ?>
+                                                </td>
+                                                <td style="vertical-align:middle; padding-left:15px;">
+                                                    <div style="font-style:italic;">
+                                                        <?php echo $add; ?>
+                                                    </div>
+                                                    <b>
+                                                        <?php echo $pmobile; ?>
+                                                    </b>
+                                                </td>
+                                                <td style="vertical-align:middle; ">
+                                                    <a href="resources/syllabus/<?php echo $cls . $sec; ?>.pdf"
+                                                        target="_blank"><i style="font-size:30px;"
+                                                            class="bi bi-file-earmark-arrow-down-fill"></i></a>
+                                                    <a href="resources/syllabus/<?php echo $cls . $sec; ?>.pdf"><i
+                                                            style="font-size:30px;" class="bi bi-book-half"></i></a>
+
+                                                </td>
+                                            </tr>
+                                            <?php
+                                        }
+                                    }
+                                    ?>
+                                </tbody>
+                            </table>
+                        </div> -->
 
 
 
@@ -53,9 +105,8 @@ require_once 'inc.php';
 
 
 
-                        <section id="portfolio" class="portfolio" style="z-index:990;">
-                            <div class="container" data-aos="fade-up"
-                                style="border:0px solid red; margin-top:-90px; -index:999;">
+                        <section id="portfolio" class="portfolio" style="border:0px solid red; margin-top:-90px;">
+                            <div class="container" data-aos="fade-up">
 
 
                                 <div class="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry"
@@ -64,8 +115,7 @@ require_once 'inc.php';
                                     <div>
                                         <ul class="portfolio-flters">
                                             <li data-filter="*" class="filter-active">All</li>
-                                            <li data-filter=".filter-app">Staffs</li>
-
+                                            <li data-filter=".filter-app">Teachers</li>
                                         </ul><!-- End Portfolio Filters -->
                                     </div>
 
@@ -77,13 +127,14 @@ require_once 'inc.php';
                                         if ($result0bb->num_rows > 0) {
                                             while ($row0 = $result0bb->fetch_assoc()) {
                                                 $tname = $row0["tname"];
-                                                $tname = $row0["tname"];
                                                 $tid = $row0["tid"];
+                                                $position = $row0["position"];
+
                                                 // { {
-                                                if (file_exists('resources/teachers/' . $tid . '.png')) {
-                                                    $pth = 'resources/teachers/' . $tid . '.png';
+                                                if (file_exists('resources/teacher/' . $tid . '.jpg')) {
+                                                    $pth = 'resources/teacher/' . $tid . '.jpg';
                                                 } else {
-                                                    $pth = 'resources/teachers/no-img.png';
+                                                    $pth = 'resources/teacher/no-img.png';
                                                 }
                                                 ?>
 
@@ -92,12 +143,14 @@ require_once 'inc.php';
                                                         <a href="teacher-details.php?id=<?php echo $tid; ?>"
                                                             data-gallery="portfolio-gallery-app" class="glightbox"><img
                                                                 src="<?php echo $pth; ?>" class="img-fluid"
-                                                                style="height:200px;" alt=""></a>
+                                                                style="height:200px; width:100%;" alt=""></a>
                                                         <div class="portfolio-info">
                                                             <div style="overflow:hidden; height:25px;">
                                                                 <?php echo $tname; ?>
                                                             </div>
-                                                            <p>Designation</p>
+                                                            <p>
+                                                                <?php echo $position; ?>
+                                                            </p>
                                                         </div>
                                                     </div>
                                                 </div><!-- End Portfolio Item -->

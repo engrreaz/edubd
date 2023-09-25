@@ -36,7 +36,7 @@
 
 
                         <?php
-                        $sql0 = "SELECT * FROM noticeboard where startfrom<='$cur' and endto>='$cur'  order by id; ";
+                        $sql0 = "SELECT * FROM noticeboard where startfrom<='$cur' and endto>='$cur'  order by id desc; ";
                         $result0bb = $conn->query($sql0);
                         if ($result0bb->num_rows > 0) {
                             while ($row0 = $result0bb->fetch_assoc()) {

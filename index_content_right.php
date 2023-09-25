@@ -184,16 +184,23 @@
                                     }
                                     ?>
                                     <div>
-                                        <h4>
-                                            <?php echo $nam; ?><small>, NDC</small>
-                                        </h4>
+                                        <h3 style="font-size:16px;">
+                                            <?php echo $nam; ?><small style="font-size:10px;">, NDC</small>
+                                        </h3>
                                         <h4>
                                             <?php echo $post; ?>
                                         </h4>
-                                        <?php echo scname; ?><br>
-                                        & <br>
-                                        <small>Secretary,<br>
-                                            Ministry of Chittagong Hill Tracts Affairs</small>
+                                        <div style="font-size:12px; color:var(--color-primary);">
+                                            <?php echo scname; ?>
+                                        </div>
+                                        & <h4>
+                                            Secretary,
+                                        </h4>
+
+                                        <div style="font-size:12px; color:var(--color-primary);">
+                                            Ministry of Chittagong Hill Tracts Affairs
+                                        </div>
+
 
 
                                     </div>
@@ -279,5 +286,38 @@
                 </div>
 
             </div>
+
+            <section id="team" class="team" style="margin-top:-50px; padding-left:5px;;">
+                <div class="container" data-aos="fade-up">
+                    <div class="row gy-12">
+                        <div class="col-xl-12 col-md-12 d-flexx" data-aos="fade-up" data-aos-delay="300"
+                            style="display:block;">
+                            <div class="member" style="position:relative;">
+                                <div style="font-size:40px; color:var(--color-primary);"><i class="bi bi-link"></i>
+                                </div>
+                                <h4 style="margin-top:-10px;">
+                                    <?php echo LINKS; ?>
+                                </h4>
+                                <div style="text-align:left;">
+                                    <ul>
+                                        <li><a href="#">Bangladesh Portal</a></li>
+                                        <li><a href="#">DSHE</a></li>
+                                        <li><a href="#">Ministry of Education</a></li>
+                                        <li><a href="#">Education Board</a></li>
+                                        <li><a href="#">Banbeis</a></li>
+                                        <li><a href="#"></a></li>
+                                        <li><a href="#"></a></li>
+                                        <li><a href="#"></a></li>
+                                        <li><a href="#"></a></li>
+                                        <li><a href="#"></a></li>
+                                        <li><a href="#"></a></li>
+                                        <li><a href="#"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div><!-- End Block -->
     </section>
 </div>
