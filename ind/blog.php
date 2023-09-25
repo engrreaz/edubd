@@ -44,7 +44,7 @@
 
 
 
-                                        <p class="post-categorys" ‍style="font-size:14px; font-style:normal;">
+                                        <p class="post-categorys"  style="font-size:14px; font-style:normal;"  >
                                             <?php echo $category; ?>
                                         </p>
 

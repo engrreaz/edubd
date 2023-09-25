@@ -43,7 +43,8 @@ require_once 'inc.php';
                         </div>
 
                         <div>
-                            <img src="resources/affiliation.png" class="img-fluid rounded-4 mb-4 docpic" alt="">
+                            <img src="resources/affiliation.png" style="width:100%;"
+                                class="img-fluid rounded-4 mb-4 docpic" alt="">
                             <object data="resources/affiliation.pdf" type="application/pdf" width="100%" height="1000">
                                 alt : <a href="resources/affiliation.pdf">Institute Affiliation Letter</a>
                             </object>
