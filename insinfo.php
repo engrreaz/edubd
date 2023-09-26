@@ -25,8 +25,8 @@ if ($lang == "en") {
     $stipend = '000';
     $examcentercode = '0';
     $boardcode = '0';
-    $htp = 'Md. Saidur Rahman<br><small>Principal</small>';
-    $smcch = 'Md. Mosiur Rahman <small>, NDC</small>';
+    $htp = 'Mr. Md. Saidur Rahman<br><small>Principal</small>';
+    $smcch = 'Mr. Md. Mosiur Rahman <small>, NDC</small>';
     $smctime = 'from 00-00-0000 to 00-00-0000';
 } else {
     require_once 'cdn/lang_bn.php';
@@ -34,14 +34,14 @@ if ($lang == "en") {
     define("scaddress", "ভুরভুরিয়া, বাঞ্ছারামপুর, ব্রাহ্মণবাড়িয়া।");
     define("scfounder", "প্রতিষ্ঠাতা : ....................");
     define("estd", "প্রতিষ্ঠাকাল : ১৯৯৯");
-    define("scmobile", "১০৩০৯১০৩১৮৭");
+    define("scmobile", "0১৩০৯১০৩১৮৭");
     define("scmpo", "২৯৪৬৪৮৪");
     define("SCCODE", "১০৩১৮৭");
     $stipend = '০০০';
     $examcentercode = '০';
     $boardcode = '০';
-    $htp = 'মো: সাইদুর রহমান<br><small>অধ্যক্ষ</small>';
-    $smcch = 'মো: মশিউর রহমান <small>, এনডিসি</small>';
+    $htp = 'জনাব মো: সাইদুর রহমান<br><small>অধ্যক্ষ</small>';
+    $smcch = 'জনাব মো: মশিউর রহমান <small>, এনডিসি</small>';
     $smctime = '০০-০০-২০-- থেকে ০০-০০-২০-- পর্যন্ত';
 }
 
