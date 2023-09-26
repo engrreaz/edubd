@@ -7,6 +7,7 @@ define("MPOINDEX", "MPO Code : ");
 define("HOME", "Home");
 define("ABOUT", "About");
 define("ABOUT_US", "About Institution");
+define("ATAGLANCE", "At a Glance");
 define("GALLERY", "Gallery");
 define("BLOG", "Blog");
 // define("ABOUT_TIMELINE", "");

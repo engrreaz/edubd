@@ -141,12 +141,12 @@ require_once 'inc.php';
                                                 <div class="col-xl-4 col-md-6 portfolio-item filter-app">
                                                     <div class="portfolio-wrap">
 
-                                                        <a href="teacher-details.php?id=<?php echo $tid; ?>"
-                                                            data-gallery="portfolio-gallery-app" class="glightbox">
+                                                        <a href="<?php echo $pth; ?>" data-gallery="portfolio-gallery-app"
+                                                            class="glightbox">
                                                             <img src="<?php echo $pth; ?>" class="img-fluid"
                                                                 style="width:100%; " alt=""></a>
 
-
+                                                        <!-- teacher-details.php?id=<?php //echo $tid; ?> -->
                                                         <div class="portfolio-info">
                                                             <div style="overflow:hidden; height:25px;">
                                                                 <?php echo $tname; ?>

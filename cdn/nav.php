@@ -32,7 +32,9 @@
                                 <?php echo ABOUT_US; ?>
                             </a></li>
                         <li><a href="#">History</a></li>
-                        <li><a href="#">At-A-Glance</a></li>
+                        <li><a href="ataglance.php">
+                                <?php echo ATAGLANCE; ?>
+                            </a></li>
                         <li><a href="#">Our Time Line</a></li>
                     </ul>
                 </li>
@@ -102,7 +104,7 @@
                 </li>
 
 
-                <li><a href="#">
+                <li><a href="gallery.php">
                         <?php echo GALLERY; ?>
                     </a></li>
                 <li><a href="#">

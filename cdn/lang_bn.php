@@ -4,6 +4,7 @@ define("MPOINDEX", "এমপিও কোড : ");
 // Navigation Title
 define("HOME", "প্রথম পাতা");
 define("ABOUT", "সম্পর্কে");
+define("ATAGLANCE", "এক নজরে");
 define("ABOUT_US", "প্রতিষ্ঠান সম্পর্কে");
 define("GALLERY", "গ্যালারী");
 define("BLOG", "ব্লগ");
