@@ -22,6 +22,12 @@ if ($lang == "en") {
     define("scmobile", "01309103187");
     define("scmpo", "230251487");
     define("SCCODE", "103187");
+    $stipend = '000';
+    $examcentercode = '0';
+    $boardcode = '0';
+    $htp = 'Md. Saidur Rahman<br><small>Principal</small>';
+    $smcch = 'Md. Mosiur Rahman <small>, NDC</small>';
+    $smctime = 'from 00-00-0000 to 00-00-0000';
 } else {
     require_once 'cdn/lang_bn.php';
     define("scname", "ভুরভুরিয়া আদর্শ উচ্চ বিদ্যালয় ও কলেজ");
@@ -31,6 +37,12 @@ if ($lang == "en") {
     define("scmobile", "১০৩০৯১০৩১৮৭");
     define("scmpo", "২৯৪৬৪৮৪");
     define("SCCODE", "১০৩১৮৭");
+    $stipend = '০০০';
+    $examcentercode = '০';
+    $boardcode = '০';
+    $htp = 'মো: সাইদুর রহমান<br><small>অধ্যক্ষ</small>';
+    $smcch = 'মো: মশিউর রহমান <small>, এনডিসি</small>';
+    $smctime = '০০-০০-২০-- থেকে ০০-০০-২০-- পর্যন্ত';
 }
 
 ?>

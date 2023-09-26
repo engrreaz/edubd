@@ -145,7 +145,7 @@ require_once 'inc.php';
                                 <td>EIIN</td>
                                 <td> : </td>
                                 <td>
-                                    <?php echo $sccode; ?>
+                                    <?php echo SCCODE; ?>
                                 </td>
 
                             </tr>
@@ -183,21 +183,21 @@ require_once 'inc.php';
                                 <td>Institute Head</td>
                                 <td> : </td>
                                 <td>
-                                    <?php echo $ht ?? '...'; ?><br><small>Principal</small>
+                                    <?php echo $htp ?? '...'; ?>
                                 </td>
                             </tr>
                             <tr>
                                 <td>SMC Chairman</td>
                                 <td> : </td>
                                 <td>
-                                    Mr. Md. Moshiur Rahman, <small>NDC</small>
+                                    <?php echo $smcch ?? '...'; ?>
                                 </td>
                             </tr>
                             <tr>
                                 <td>SMC Validity Period </td>
                                 <td> : </td>
                                 <td>
-                                    ....... to ........
+                                    <?php echo $smctime ?? '...'; ?>
                                 </td>
                             </tr>
                             <tr>
