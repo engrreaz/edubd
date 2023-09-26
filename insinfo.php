@@ -32,6 +32,5 @@ if ($lang == "en") {
     define("scmpo", "২৯৪৬৪৮৪");
     define("SCCODE", "১০৩১৮৭");
 }
-
-
+echo 'x';
 ?>
