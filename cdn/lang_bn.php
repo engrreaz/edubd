@@ -27,7 +27,6 @@ define("INSACK", "স্বীকৃতি");
 define("INSMPO", "এমপিও");
 define("INSAFF", "অধিভূক্তি");
 
-
 define("MANAGEMENT", "ব্যবস্থাপনা");
 define("TEACHER", "শিক্ষকমন্ডলী");
 define("STAFF", "কর্মচারীবৃন্দ");

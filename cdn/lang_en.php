@@ -2,7 +2,6 @@
 // define("", "");
 define("EIIN", "EIIN : ");
 define("MPOINDEX", "MPO Code : ");
-
 // Navigation Title
 define("HOME", "Home");
 define("ABOUT", "About");
