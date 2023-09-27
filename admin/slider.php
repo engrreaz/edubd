@@ -1,15 +1,14 @@
 <?php require_once 'global.php'; ?>
 <div class="section-header">
     <h2>
-        <div class="logo"><i class="bi bi-disc-fill cs"></i></div>
-        <h5 class="text-center"><b>Social Media Links</b></h5>
+        <?php echo "Sliding Area Setup"; ?>
     </h2>
-
 </div>
 
 <div class="col-xl-12 col-md-12 d-flexx" data-aos="fade-up" data-aos-delay="300" style="display:block;">
     <div class="member" style="position:relative;">
-
+        <div class="logo"><i class="bi bi-disc-fill cs"></i></div>
+        <h5 class="text-center"><b>Social Media Links</b></h5>
         <table style="width:100%;">
             <?php
             $sql0 = "SELECT * FROM txtnote where title='socialicon' order by id; ";

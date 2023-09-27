@@ -36,7 +36,7 @@
         <div class="social-links d-none d-md-flex align-items-center">
             <table>
                 <?php
-                $sql0 = "SELECT * FROM txtnote where title='socialicon' order by id";
+                $sql0 = "SELECT * FROM txtnote where title='socialicon' and texten!='#' order by id";
                 $result0t = $conn->query($sql0);
                 if ($result0t->num_rows > 0) {
                     echo '<tr><td style="text-align:right;">';

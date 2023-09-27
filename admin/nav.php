@@ -44,7 +44,16 @@
                 <li><a href="contacts.php">
                         <?php echo CONTACTS; ?>
                     </a></li>
+                <?php
 
+                if ($usr != 'Guest') {
+                    if (isset($userData['picture'])) {
+                        $usrpic = $userData['picture'];
+                    } else {
+                        $usrpic = '../resources/mpo.png';
+                    }
+                }
+                ?>
 
                 <li class="dropdown" style="">
                     <a href="#">

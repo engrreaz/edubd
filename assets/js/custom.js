@@ -1,13 +1,20 @@
 function home_manager() {
+    $("#main-block").html(""); infor = "a";
+    $.ajax({
+        type: "POST", url: "home.php", data: infor, cache: false, beforeSend: function () { $('#main-block').html('<span class=""><i class="bi bi-disk-fill"></i></span>'); }, success: function (html) {
+            $("#main-block").html(html);
+        }
+    });
+}
 
-        // document.getElementById("main-block").innerHTML = "Ubuntu";
-        $("#main-block").html(""); infor = "a";
-        $.ajax({
-            type: "POST", url: "home.php", data: infor, cache: false, beforeSend: function () { $('#main-block').html('<span class=""><i class="bi bi-mortarboard-fill"></i></span>'); }, success: function (html) {
-                $("#main-block").html(html);
-            }
-        });
-    }
+function sliding_area() {
+    $("#main-block").html(""); infor = "a";
+    $.ajax({
+        type: "POST", url: "slider.php", data: infor, cache: false, beforeSend: function () { $('#main-block').html('<span class=""><i class="bi bi-file-slides"></i></span>'); }, success: function (html) {
+            $("#main-block").html(html);
+        }
+    });
+}
 
 
 // function home() {

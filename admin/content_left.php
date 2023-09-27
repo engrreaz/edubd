@@ -50,11 +50,12 @@
 
             <div class="col-xl-12 col-md-12 d-flexx" data-aos="fade-up" data-aos-delay="300" style="display:block;">
                 <div class="member" style="position:relative;">
-                    <div class="logo"><i class="bi bi-mortarboard-fill cs"></i></div>
-                    <h4>Control panel</h4>
+                    <div class="logo"><i class="bi bi-house-door-fill cs"></i></div>
+                    <h4>Home Page</h4>
                     <div style="text-align:left;">
                         <ul>
-                            <li><a href="#" onclick="home_manager();">Home Manager</a></li>
+                            <li><a href="#" onclick="home_manager();">Social Media Links</a></li>
+                            <li><a href="#" onclick="sliding_area();">Sliding Area</a></li>
                             <li><a href="#">Exam Schedule</a></li>
                             <li><a href="#">Syllabus</a></li>
                             <li><a href="#">Class Schedule</a></li>
