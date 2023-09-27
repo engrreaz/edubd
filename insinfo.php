@@ -34,7 +34,7 @@ if ($lang == "en") {
     define("scaddress", "ভুরভুরিয়া, বাঞ্ছারামপুর, ব্রাহ্মণবাড়িয়া।");
     define("scfounder", "প্রতিষ্ঠাতা : ....................");
     define("estd", "প্রতিষ্ঠাকাল : ১৯৯৯");
-    define("scmobile", "0১৩০৯১০৩১৮৭");
+    define("scmobile", "০১৩০৯১০৩১৮৭");
     define("scmpo", "২৯৪৬৪৮৪");
     define("SCCODE", "১০৩১৮৭");
     $stipend = '০০০';

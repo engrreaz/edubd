@@ -113,7 +113,16 @@
                 <li><a href="contacts.php">
                         <?php echo CONTACTS; ?>
                     </a></li>
+                <?php
 
+                if ($usr != 'Guest') {
+                    if (isset($userData['picture'])) {
+                        $usrpic = $userData['picture'];
+                    } else {
+                        $usrpic = 'resources/mpo.png';
+                    }
+                }
+                ?>
 
                 <li class="dropdown" style="">
                     <a href="#">
@@ -124,15 +133,33 @@
                         <li style="text-align:center;"><b>
                                 <?php echo $usr; ?>
                             </b></li>
-                        <li><a href="#">
-                                <?php echo DASHBOARD; ?>
-                            </a></li>
-                        <li><a href="#">
-                                <?php echo PROFILE; ?>
-                            </a></li>
-                        <li><a href="#">
-                                <?php echo SECURITY; ?>
-                            </a></li>
+
+                        <?php
+                        if ($usr == 'Guest') {
+                            echo '<a href="login.php">Login</a>';
+                            include 'indexgp.php';
+                        } else {
+                            ?>
+
+
+
+                            <li><a href="admin/index.php">
+                                    <?php echo DASHBOARD; ?>
+                                </a></li>
+                            <li><a href="#">
+                                    <?php echo PROFILE; ?>
+                                </a></li>
+                            <li><a href="#">
+                                    <?php echo SECURITY; ?>
+                                </a></li>
+
+                            <li><a href="logout2.php">
+                                    <?php echo 'Sign Out'; ?>
+                                </a></li>
+                            <?php
+                        }
+                        ?>
+
                     </ul>
                 </li>
 

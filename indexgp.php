@@ -39,6 +39,10 @@ if ($gClient->getAccessToken()) {
 
     //Render facebook profile data
     if (!empty($userData)) {
+        $_SESSION['user'] = $userData['email'];
+        setcookie("user", $userData['email'], time() + (86400 * 365), "/");
+        $usr = $userData['email'];
+
         $output = '<h1>Google+ Profile Details </h1>';
         $output .= '<img src="' . $userData['picture'] . '" width="300" height="220">';
         $output .= '<br/>Google ID : ' . $userData['oauth_uid'];
@@ -54,21 +58,12 @@ if ($gClient->getAccessToken()) {
     }
 } else {
     $authUrl = $gClient->createAuthUrl();
-    $output = '<a href="' . filter_var($authUrl, FILTER_SANITIZE_URL) . '"><img src="assets/images/glogin.png" alt=""/></a>';
+    $output = '<a href="' . filter_var($authUrl, FILTER_SANITIZE_URL) . '"><img src="assets/images/glogin.png" width="150px"  alt=""/></a>';
 }
 ?>
 <html>
 
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Login with Google using PHP by CodexWorld</title>
-    <style type="text/css">
-        h1 {
-            font-family: Arial, Helvetica, sans-serif;
-            color: #999999;
-        }
-    </style>
-</head>
+
 
 <body>
     <div>

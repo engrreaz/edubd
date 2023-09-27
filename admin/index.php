@@ -1,6 +1,7 @@
 <?php
 require_once '../inc.php';
 ?>
+
 <link rel="stylesheet" type="text/css" href="css.css" />
 <!-- ======= Breadcrumbs ======= -->
 <div class="breadcrumbs">

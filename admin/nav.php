@@ -55,15 +55,32 @@
                         <li style="text-align:center;"><b>
                                 <?php echo $usr; ?>
                             </b></li>
-                        <li><a href="#">
-                                <?php echo DASHBOARD; ?>
-                            </a></li>
-                        <li><a href="#">
-                                <?php echo PROFILE; ?>
-                            </a></li>
-                        <li><a href="#">
-                                <?php echo SECURITY; ?>
-                            </a></li>
+
+                        <?php
+                        if ($usr == 'Guest') {
+                            echo '<a href="../login.php">Login</a>';
+                        } else {
+                            ?>
+
+
+
+                            <li><a href="../index.php">
+                                    <?php echo DASHBOARD; ?>
+                                </a></li>
+                            <li><a href="#">
+                                    <?php echo PROFILE; ?>
+                                </a></li>
+                            <li><a href="#">
+                                    <?php echo SECURITY; ?>
+                                </a></li>
+
+                            <li><a href="../logout2.php">
+                                    <?php echo 'Sign Out'; ?>
+                                </a></li>
+                            <?php
+                        }
+                        ?>
+
                     </ul>
                 </li>
 
