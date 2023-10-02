@@ -286,6 +286,8 @@
                 </div>
             </div>
 
+
+            //links section
             <section id="team" class="team" style="margin-top:-50px; padding-left:5px;;">
                 <div class="container" data-aos="fade-up">
                     <div class="row gy-12">
