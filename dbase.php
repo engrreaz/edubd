@@ -15,4 +15,5 @@ $eimbox = mysqli_connect($servername2, $username2, $password2, $dbname2);
 if (!$eimbox) {
     die("Connection failed: " . mysqli_connect_error());
 }
+
 ?>
