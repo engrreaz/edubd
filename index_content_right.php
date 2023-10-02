@@ -284,7 +284,6 @@
                         </div>
                     </div><!-- End testimonial item -->
                 </div>
-
             </div>
 
             <section id="team" class="team" style="margin-top:-50px; padding-left:5px;;">
