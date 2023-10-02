@@ -300,18 +300,17 @@
                                 </h4>
                                 <div style="text-align:left;">
                                     <ul>
-                                        <li><a href="#">Bangladesh Portal</a></li>
-                                        <li><a href="#">DSHE</a></li>
-                                        <li><a href="#">Ministry of Education</a></li>
-                                        <li><a href="#">Education Board</a></li>
-                                        <li><a href="#">Banbeis</a></li>
-                                        <li><a href="#"></a></li>
-                                        <li><a href="#"></a></li>
-                                        <li><a href="#"></a></li>
-                                        <li><a href="#"></a></li>
-                                        <li><a href="#"></a></li>
-                                        <li><a href="#"></a></li>
-                                        <li><a href="#"></a></li>
+                                        <?php
+                                        $sql0 = "SELECT * FROM links order by slno";
+                                        $result0bbd = $eimbox->query($sql0);
+                                        if ($result0bbd->num_rows > 0) {
+                                            while ($row0 = $result0bbd->fetch_assoc()) {
+                                                $lnktext = $row0["link" . $lang];
+                                                $uri = $row0["linkurl"];
+                                                echo '<li><a href="' . $uri . '"  target="_blank">' . $lnktext . '</a></li>';
+                                            }
+                                        }
+                                        ?>
                                     </ul>
                                 </div>
                             </div>
