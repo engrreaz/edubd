@@ -307,6 +307,7 @@
                                             while ($row0 = $result0bbd->fetch_assoc()) {
                                                 $lnktext = $row0["link" . $lang];
                                                 $uri = $row0["linkurl"];
+                                                echo $lnktext . $uri;
                                                 echo '<li><a href="' . $uri . '"  target="_blank">' . $lnktext . '</a></li>';
                                             }
                                         }
