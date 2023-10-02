@@ -16,8 +16,8 @@ $st = $cnt - 5;
     <div class="container">
         <div class="row gy-4">
             <div class="col-lg-5 col-md-12 footer-info">
-                <a href="index.html" class="logo d-flex align-items-center">
-                    <span>Impact</span>
+                <a href="index.php" class="logo d-flex align-items-center">
+                    <img src="resources/logo.png" alt="logo" />
                 </a>
                 <div id="visitor">
                     <div id="counter" style="font-size:26px; font-weight:bold;">
@@ -35,11 +35,12 @@ $st = $cnt - 5;
                     </div>
                 </div>
 
-                <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita
-                    valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
-                <div class="social-links d-flex mt-4">
+                <p style="font-size:13px; margin-top:15px;">
+                    Page Last Updated On : <br><span style="font-style:normal;">Thursday, 28 September, 2023</span>
+                </p>
+                <div class=" social-links d-flex mt-4">
                     <?php
-                    $sql0 = "SELECT * FROM txtnote where title='socialicon' order by id";
+                    $sql0 = "SELECT * FROM txtnote where title='socialicon' and texten!='#' order by id";
                     $result0t = $conn->query($sql0);
                     if ($result0t->num_rows > 0) {
 

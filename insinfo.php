@@ -5,7 +5,7 @@ $sccode = "103187";
 
 define("CDN", "http://localhost/edubd/cdn/");
 
-// phpinfo();
+// phpinfo();  
 
 define("API", "dsgyft6868rdyhdtur66789-ldyr");
 
