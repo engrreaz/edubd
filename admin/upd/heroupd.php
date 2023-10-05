@@ -28,33 +28,16 @@ if ($act == 'upd') {
     echo '<i class="bi bi-file-slides"></i>';
 } else {
 
-    // $file_pointer = fopen($pthk, 'a');
-    // fclose($file_pointer);
-    echo '<br>';
-    if (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on') {
-        $link = "https";
-    } else {
-        $link = "http";
-    }
-
-
-    // Here append the common URL characters.
-    $link .= "://" . $_SERVER['HTTP_HOST'] . '/';
-
-
-
-
     $link = '../';
-    $link = 'https://bahsac.edu.bd/';
     $pthk = $link . $_POST['pth'];
-    echo '<img src="' . $pthk . '" />';
-    echo $pthk;
+    // echo '<img src="' . $pthk . '" />';
+    // echo $pthk . '<br>';
 
-    if (file_exists($pthk)) {
-        echo 'Yes';
-    } else {
-        echo 'No';
-    }
+    // if (file_exists($pthk)) {
+    //     echo 'Yes';
+    // } else {
+    //     echo 'No';
+    // }
     unlink($pthk);
     // $vst = "DELETE From upload  where id='$id'";
     //     $conn->query($vst);
