@@ -8,6 +8,7 @@ $sccode = "103187";
 
 
 
+
 include_once('../dbase.php');
 
 
