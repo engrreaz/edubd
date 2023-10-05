@@ -45,6 +45,7 @@ if ($act == 'upd') {
 
 
     $link = '../';
+    $link = 'https://bahsac.edu.bd/';
     $pthk = $link . $_POST['pth'];
     echo '<img src="' . $pthk . '" />';
     echo $pthk;
