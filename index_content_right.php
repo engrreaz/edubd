@@ -193,7 +193,11 @@
                                         <div style="font-size:12px; color:var(--color-primary);">
                                             <?php echo scname; ?>
                                         </div>
-                                        & <h4>
+                                        <span
+                                            style="margin:auto; color:white; height:20px; widht:40px; background:var(--color-primary); padding:3px 10px;; border-radius:50%;">
+                                            &
+                                        </span>
+                                        <h4>
                                             Secretary,
                                         </h4>
 

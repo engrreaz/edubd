@@ -1,54 +1,48 @@
-<!doctype html>
-<html>
+<?php $utype = $uutype ?? ''; ?>
 
-<head lang="en">
-    <meta charset="utf-8">
-    <title>Ajax File Upload with jQuery and PHP</title>
-    <link rel="stylesheet" href="style.css" type="text/css" />
-    <script type="text/javascript" src="js/jquery-1.11.3-jquery.min.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/jquery-1.11.3-jquery.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-</head>
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"  integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
 
-<body>
-    <div class="container">
-        <div class="row">
 
-            <div class="col-md-8">
+<style>
+    form {
+        font-size: 14px;
+    }
+</style>
+<div class="row">
 
-                <h1><a href="#" target="_blank"><img src="logo.png" width="80px" />Ajax File Uploading with Database
-                        MySql</a></h1>
-                <hr>
+    <div>
 
-                <form id="form" action="ajaxupload.php" method="post" enctype="multipart/form-data">
-                    <div class="form-group">
-                        <label for="name">NAME</label>
-                        <input type="text" class="form-control" id="name" name="name" placeholder="Enter name"
-                            required />
-                    </div>
-                    <div class="form-group">
-                        <label for="email">EMAIL</label>
-                        <input type="email" class="form-control" id="email" name="email" placeholder="Enter email"
-                            required />
-                    </div>
+        <img src="filed.png" width="40px" />
+        <br>
+        <p style="font-size:13px;">To add a new slide first upload an image by "Choose File" and hit "Upload"
+            button.<br>
+            After Uploading update slide information you need.</p>
+        <hr>
 
-                    <input id="uploadImage" type="file" accept="image/*" name="image" />
-                    <div id="preview"><img src="filed.png" /></div><br>
-                    <input class="btn btn-success" type="submit" value="Upload">
-                </form>
+        <form id="form" action="ajaxupload.php" method="post" enctype="multipart/form-data">
+            <input name="utype" id="utype" type="text" value="<?php echo $utype; ?>" class="form-controls" hidden />
+            <input type="text" class="form-controls" id="name" name="name" placeholder="Enter name" value="name"
+                hidden />
+            <input type="email" class="form-controls" id="email" name="email" placeholder="Enter email"
+                value="email@email.com" hidden />
 
-                <div id="err"></div>
-                <hr>
-                <p><a href="https://www.cloudways.com" target="_blank">www.Cloudways.com</a></p>
-            </div>
-        </div>
+
+
+
+
+
+            <input id="uploadImage" type="file" accept="image/*" name="image" />
+            <div id="preview"><img src="filed.png" style="width:50px;" /></div>
+            <input class="btn btn-success" type="submit" value="Upload">
+        </form>
+
+        <div id="err"></div>
+
     </div>
-</body>
-
-</html>
-
+</div>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

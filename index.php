@@ -61,7 +61,7 @@ require_once 'inc.php';
                 <div class="carousel-inner">
 
                     <div style="position:absolute; z-index:990; right:15px; bottom:15px; height:60px; width:60px;">
-                        <img src="resources/logo.png" style=" height:60px; width:60px;" />
+                        <img src="resources/logo-white.png" style=" height:60px; width:60px;" />
                     </div>
 
                     <?php

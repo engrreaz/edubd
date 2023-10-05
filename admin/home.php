@@ -27,11 +27,12 @@
                             <i class="bi bi-<?php echo $ico; ?>"></i>
                         </td>
                         <td>
-                            <input type="text" class="input form-control" id="link" value="<?php echo $lnk; ?>" />
+                            <input type="text" class="input form-control" id="links<?php echo $id; ?>"
+                                value="<?php echo $lnk; ?>" />
                         </td>
                         <td>&nbsp;</td>
                         <td colspan="2"><button class="btn btn-primary" onclick="upd(<?php echo $id; ?>);"><i
-                                    class="bi bi-box-arrow-right"></i></button></td>
+                                    class="bi bi-box-arrow-right"></i></button><span id="uuu<?php echo $id; ?>"></span></td>
                     </tr>
                     <?php
                 }

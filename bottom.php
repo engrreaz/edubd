@@ -17,7 +17,7 @@ $st = $cnt - 5;
         <div class="row gy-4">
             <div class="col-lg-5 col-md-12 footer-info">
                 <a href="index.php" class="logo d-flex align-items-center">
-                    <img src="resources/logo.png" alt="logo" />
+                    <img src="resources/logo-white.png" alt="logo" />
                 </a>
                 <div id="visitor">
                     <div id="counter" style="font-size:26px; font-weight:bold;">

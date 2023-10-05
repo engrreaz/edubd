@@ -1,9 +1,9 @@
-<!-- <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="stylesheet" type="text/css" href="css/form.css" /> -->
+<?php $utype = $uutype ?? ''; ?>
+
 <style>
     #uploadForm label {
         margin: 2px;
-        font-size: 1em;
+        font-size: .75em;
     }
 
     #progress-bar {
@@ -27,6 +27,9 @@
 
         <h2 class="text-center">Progress Bar</h2>
         <div>
+            <div class="row">
+                <input name="utype" type="text" value="<?php echo $utype; ?>" class="full-width form-control" />
+            </div>
             <div class="row">
                 <label>Upload Image File:</label> <input name="userImage" id="userImage" type="file" accept="image/*"
                     class="full-width" required>
