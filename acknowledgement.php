@@ -3,8 +3,6 @@ require_once 'inc.php';
 ?>
 
 
-
-
 <!-- ======= Breadcrumbs ======= -->
 <div class="breadcrumbs">
     <nav>
